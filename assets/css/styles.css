@@ -131,6 +131,12 @@ div#carousel-1.carousel.slide{
 	}
 
 
+/*--------form------- */
+
+	form label{
+		font-size: 15px;
+	}
+
   /* RESPONSIVE CSS
   -------------------------------------------------- */
 
