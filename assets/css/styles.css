@@ -28,6 +28,7 @@ div#carousel-1.carousel.slide{
   margin-bottom:60px;
 }
 
+/*footer*/
 
 
 
@@ -122,6 +123,11 @@ div#carousel-1.carousel.slide{
 		background:#252a2f;
 		padding:18px 0 8px;
 		font-size:13px;
+		color: white;
+	}
+	.copyright a{
+		/*icono de inicio de sesion*/
+		color:white;
 	}
 
 
