@@ -29,6 +29,9 @@ div#carousel-1.carousel.slide{
 }
 
 
+
+
+
 .featurette-divider {
   margin: 80px 0; /* Space out the Bootstrap <hr> more */
 }
@@ -41,7 +44,10 @@ div#carousel-1.carousel.slide{
 }
 
 
-
+.marketing .col-lg-3{
+  margin-bottom: 20px;
+  text-align: center;
+}
 
 
 
