@@ -47,19 +47,25 @@
 					</div>
 					<div class="form-group">
 					    <label>Nombre y apellido*</label>
-					    <input type="email" class="form-control" id="nombre" placeholder="Nombre Apellido">
+					    <input type="text" class="form-control" id="nombre" placeholder="Nombre Apellido">
 					</div>
 					<div class="form-group">
 					    <label>Telefono de contacto*</label>
-					    <input type="email" class="form-control" id="tel" placeholder="+569 1234 5678">
+					    <input type="text" class="form-control" id="tel" placeholder="+569 1234 5678">
 					</div>
 					<div class="form-group">
 					    <label>Motivo*</label>
-					    <input type="email" class="form-control" id="tel" placeholder="combobox aqui">
+					    <select class="form-control" id="motivo" >
+					    	<option selected>Seleccione un motivo</option>
+					    	<option>Duda</option>
+					    	<option>Consulta</option>
+					    	<option>Trauma</option>
+					    </select>
 					</div>
+
 					<div class="form-group">
 					    <label>Mensaje*</label>
-					    <textarea class="form-control" rows="5" placeholder="Ingrese su mensaje"></textarea> 
+					    <textarea class="form-control" rows="5" id="mensaje" placeholder="Ingrese su mensaje"></textarea> 
 					</div>
 				</form>
 				<p>
@@ -67,7 +73,7 @@
 			</div>
 			<div class="col-md-4" background="green">
 				<div class="content col-md-2" align="center">
-					<img src="http://www.vectorportal.com/img_novi/round-logo.jpg" style="position:fixed; " width="250px" align="center" />
+					<img src="http://www.vectorportal.com/img_novi/round-logo.jpg" style="position:fixed; " width="250px" />
 
 				</div>
 			</div>
