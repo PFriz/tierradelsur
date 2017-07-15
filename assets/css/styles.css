@@ -1,0 +1,81 @@
+button.navbar-toggle.collapsed{
+  margin:auto;
+}
+
+div#carousel-1.carousel.slide{
+  margin-bottom:60px;
+  height:500px;
+  margin:auto;
+}
+
+.carousel-inner > .item > img{
+  position:absolute;
+  top:0;
+  left:0;
+  min-width:100%;
+  height:500px;
+}
+
+.carousel .item{
+  height:500px;
+  background-color:#777;
+}
+
+.carousel{
+  height:500px;
+  margin-bottom:60px;
+}
+
+	
+		
+/* Contact Details Box Styles Starts */
+	
+	.contact-details li + li{
+		margin-top:20px;
+	}
+	.contact-details li .fa{
+		color:#ffbf42;
+		padding:5px 10px 0 0;
+		font-size:18px;
+	}
+	
+
+/* Footer Links Styles Starts */
+
+	.footer-links{
+		background:#e8e8e8;
+		border-top:1px solid #bcbcbc;
+		padding:25px 0 40px;
+	}
+		.footer-links h5{
+			text-transform:uppercase;
+			margin-bottom:20px;
+		}
+		.footer-links ul{
+			list-style:none;
+			margin:0;
+			padding:0;
+		}
+			.footer-links li{
+				font-size:12px;
+				padding:2px 0;
+			}
+				.footer-links li, .footer-links li a, .footer-links .last h4.lead{
+					color:#8b8b8b;
+				}
+				.footer-links li a:hover, .footer-links .last li a{
+					color:#333;
+				}
+				.footer-links .last h4.lead{
+					font-size:24px;
+					margin-bottom:0;
+				}
+				.footer-links .last h4.lead span{
+					color:#151515;
+				}
+
+	.copyright{
+		background:#252a2f;
+		padding:18px 0 8px;
+		font-size:13px;
+	}
