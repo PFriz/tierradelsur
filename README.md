@@ -1,2 +1,2 @@
 # tierradelsur
-projecto personal con fines de lucro
+proyecto personal con fines de lucro
