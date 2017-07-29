@@ -158,6 +158,23 @@ div#carousel-1.carousel.slide{
 					background:#2f353b;
 				}
 
+
+	
+/*PAGINA PRODUCTO*/
+			.product-info{
+				padding-top:10px;
+			}
+
+		.product-info .images-block{
+		}
+
+		.product-info .images-block .thumbnail{
+			padding:10px;
+			-webkit-border-radius:0;
+			   -moz-border-radius:0;
+					border-radius:0;
+		}
+
 /* Contact Details Box Styles Starts */
 
 	.contact-details li + li{
