@@ -217,6 +217,30 @@ div#carousel-1.carousel.slide{
 		/*icono de inicio de sesion*/
 		color:white;
 	}
+	/*--------busqueda------*/
+	.margen{
+
+		margin-left: 10%;
+	}
+	.cuadro{
+
+		padding: 2%;
+		margin: 2%;
+
+		border: 1px solid #81F79F;
+		border-bottom-right-radius: 20px;
+		border-bottom-left-radius: 20px;
+	}
+	.imagen{
+		height: 50%;
+		width: 100%;
+	}
+	.imagen img{
+		height: 100%;
+		width:  100%;
+
+	}
+
 
 
 /*--------form------- */
