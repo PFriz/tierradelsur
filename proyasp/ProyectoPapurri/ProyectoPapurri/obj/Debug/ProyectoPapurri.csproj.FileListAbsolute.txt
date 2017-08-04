@@ -18,3 +18,23 @@ c:\users\perrin\documents\visual studio 2015\Projects\ProyectoPapurri\ProyectoPa
 c:\users\perrin\documents\visual studio 2015\Projects\ProyectoPapurri\ProyectoPapurri\obj\Debug\ProyectoPapurri.csprojResolveAssemblyReference.cache
 c:\users\perrin\documents\visual studio 2015\Projects\ProyectoPapurri\ProyectoPapurri\obj\Debug\ProyectoPapurri.dll
 c:\users\perrin\documents\visual studio 2015\Projects\ProyectoPapurri\ProyectoPapurri\obj\Debug\ProyectoPapurri.pdb
+C:\Users\Perrin\Documents\GitHub\tierradelsur\proyasp\ProyectoPapurri\ProyectoPapurri\bin\roslyn\csc.exe
+C:\Users\Perrin\Documents\GitHub\tierradelsur\proyasp\ProyectoPapurri\ProyectoPapurri\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Perrin\Documents\GitHub\tierradelsur\proyasp\ProyectoPapurri\ProyectoPapurri\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Perrin\Documents\GitHub\tierradelsur\proyasp\ProyectoPapurri\ProyectoPapurri\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Perrin\Documents\GitHub\tierradelsur\proyasp\ProyectoPapurri\ProyectoPapurri\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Perrin\Documents\GitHub\tierradelsur\proyasp\ProyectoPapurri\ProyectoPapurri\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Perrin\Documents\GitHub\tierradelsur\proyasp\ProyectoPapurri\ProyectoPapurri\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Perrin\Documents\GitHub\tierradelsur\proyasp\ProyectoPapurri\ProyectoPapurri\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Perrin\Documents\GitHub\tierradelsur\proyasp\ProyectoPapurri\ProyectoPapurri\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Perrin\Documents\GitHub\tierradelsur\proyasp\ProyectoPapurri\ProyectoPapurri\bin\roslyn\vbc.exe
+C:\Users\Perrin\Documents\GitHub\tierradelsur\proyasp\ProyectoPapurri\ProyectoPapurri\bin\roslyn\VBCSCompiler.exe
+C:\Users\Perrin\Documents\GitHub\tierradelsur\proyasp\ProyectoPapurri\ProyectoPapurri\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Perrin\Documents\GitHub\tierradelsur\proyasp\ProyectoPapurri\ProyectoPapurri\bin\ProyectoPapurri.dll.config
+C:\Users\Perrin\Documents\GitHub\tierradelsur\proyasp\ProyectoPapurri\ProyectoPapurri\bin\ProyectoPapurri.dll
+C:\Users\Perrin\Documents\GitHub\tierradelsur\proyasp\ProyectoPapurri\ProyectoPapurri\bin\ProyectoPapurri.pdb
+C:\Users\Perrin\Documents\GitHub\tierradelsur\proyasp\ProyectoPapurri\ProyectoPapurri\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Perrin\Documents\GitHub\tierradelsur\proyasp\ProyectoPapurri\ProyectoPapurri\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Perrin\Documents\GitHub\tierradelsur\proyasp\ProyectoPapurri\ProyectoPapurri\obj\Debug\ProyectoPapurri.csprojResolveAssemblyReference.cache
+C:\Users\Perrin\Documents\GitHub\tierradelsur\proyasp\ProyectoPapurri\ProyectoPapurri\obj\Debug\ProyectoPapurri.dll
+C:\Users\Perrin\Documents\GitHub\tierradelsur\proyasp\ProyectoPapurri\ProyectoPapurri\obj\Debug\ProyectoPapurri.pdb
