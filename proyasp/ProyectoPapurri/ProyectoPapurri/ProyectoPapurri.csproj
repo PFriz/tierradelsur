@@ -66,10 +66,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\herbal_db.mdf" />
-    <Content Include="App_Data\herbal_db_log.ldf">
-      <DependentUpon>herbal_db.mdf</DependentUpon>
-    </Content>
     <Content Include="packages.config" />
     <Content Include="Models\Pagina.Master" />
     <None Include="Web.Debug.config">
@@ -119,7 +115,9 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
