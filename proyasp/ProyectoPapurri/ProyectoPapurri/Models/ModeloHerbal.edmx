@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="herbal_dbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ProductoSet">
+          <Key>
+            <PropertyRef Name="id_producto" />
+          </Key>
+          <Property Name="id_producto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nombre" Type="nvarchar" MaxLength="40" Nullable="false" />
+          <Property Name="n_cientifico" Type="nvarchar" MaxLength="35" Nullable="false" />
+          <Property Name="beneficios" Type="nvarchar" MaxLength="40" Nullable="false" />
+          <Property Name="Tipo_id_tipo" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TipoSet">
+          <Key>
+            <PropertyRef Name="id_tipo" />
+          </Key>
+          <Property Name="id_tipo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nombre" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_ProductoTipo">
+          <End Role="TipoSet" Type="Self.TipoSet" Multiplicity="1" />
+          <End Role="ProductoSet" Type="Self.ProductoSet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TipoSet">
+              <PropertyRef Name="id_tipo" />
+            </Principal>
+            <Dependent Role="ProductoSet">
+              <PropertyRef Name="Tipo_id_tipo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="herbal_dbModelStoreContainer">
+          <EntitySet Name="ProductoSet" EntityType="Self.ProductoSet" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TipoSet" EntityType="Self.TipoSet" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_ProductoTipo" Association="Self.FK_ProductoTipo">
+            <End Role="TipoSet" EntitySet="TipoSet" />
+            <End Role="ProductoSet" EntitySet="ProductoSet" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="herbal_dbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="herbal_dbEntities" annotation:LazyLoadingEnabled="true" >
+          <EntitySet Name="ProductoSet" EntityType="herbal_dbModel.Producto" />
+          <EntitySet Name="TipoSet" EntityType="herbal_dbModel.Tipo" />
+          <AssociationSet Name="ProductoTipo" Association="herbal_dbModel.ProductoTipo">
+            <End Role="Producto" EntitySet="ProductoSet" />
+            <End Role="Tipo" EntitySet="TipoSet" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Producto">
+          <Key>
+            <PropertyRef Name="id_producto" />
+          </Key>
+          <Property Name="id_producto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" ConcurrencyMode="Fixed" />
+          <Property Name="nombre" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+          <Property Name="n_cientifico" Type="String" Nullable="false" MaxLength="35" Unicode="true" FixedLength="false" />
+          <Property Name="beneficios" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Tipo" Relationship="herbal_dbModel.ProductoTipo" FromRole="Producto" ToRole="Tipo" />
+        </EntityType>
+        <EntityType Name="Tipo">
+          <Key>
+            <PropertyRef Name="id_tipo" />
+          </Key>
+          <Property Name="id_tipo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Producto" Relationship="herbal_dbModel.ProductoTipo" FromRole="Tipo" ToRole="Producto" />
+        </EntityType>
+        <Association Name="ProductoTipo">
+          <End Type="herbal_dbModel.Producto" Role="Producto" Multiplicity="1" />
+          <End Type="herbal_dbModel.Tipo" Role="Tipo" Multiplicity="1" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="herbal_dbModelStoreContainer" CdmEntityContainer="herbal_dbEntities">
+    <EntitySetMapping Name="ProductoSet">
+      <EntityTypeMapping TypeName="IsTypeOf(herbal_dbModel.Producto)">
+        <MappingFragment StoreEntitySet="ProductoSet">
+          <ScalarProperty Name="id_producto" ColumnName="id_producto" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="n_cientifico" ColumnName="n_cientifico" />
+          <ScalarProperty Name="beneficios" ColumnName="beneficios" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoSet">
+      <EntityTypeMapping TypeName="IsTypeOf(herbal_dbModel.Tipo)">
+        <MappingFragment StoreEntitySet="TipoSet">
+          <ScalarProperty Name="id_tipo" ColumnName="id_tipo" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="ProductoTipo" TypeName="herbal_dbModel.ProductoTipo" StoreEntitySet="ProductoSet">
+      <EndProperty Name="Tipo">
+        <ScalarProperty Name="id_tipo" ColumnName="Tipo_id_tipo" />
+      </EndProperty>
+      <EndProperty Name="Producto">
+        <ScalarProperty Name="id_producto" ColumnName="id_producto" />
+      </EndProperty>
+    </AssociationSetMapping>
+    </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
