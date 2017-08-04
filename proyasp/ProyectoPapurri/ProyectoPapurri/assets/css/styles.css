@@ -1,0 +1,267 @@
+
+
+button.navbar-toggle.collapsed{
+  margin:auto;
+}
+
+div#carousel-1.carousel.slide{
+  margin-bottom:60px;
+  height:500px;
+  margin:5%;
+}
+
+.carousel-inner > .item > img{
+  position:absolute;
+  top:0;
+  left:0;
+  min-width:100%;
+  height:500px;
+}
+
+.carousel .item{
+  height:500px;
+  background-color:#777;
+}
+
+.carousel{
+  height:500px;
+  margin-bottom:60px;
+}
+
+/*footer*/
+
+
+
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+/*marketing*/
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+
+}
+.marketing h2 {
+  font-weight: normal;
+
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.marketing{
+	margin: 5%;
+	text-align: center;
+
+}
+
+/*.marketing .col-lg-3{
+  margin-bottom: 20px;
+  text-align: center;
+}*/
+
+
+/*Productos vendidos*/
+/* Products Box Styles Starts */
+
+	.products-list{
+		margin-bottom:15px;
+	}
+		.product-head{
+			padding: 14px 20px;
+			margin:0 0 20px;
+			font-size:24px;
+			background:#228d0d;
+			color:#fff;
+			text-transform:uppercase;
+		}
+		.product-col{
+			padding:15px 15px 10px;
+			margin-bottom:20px;
+			background:#fff;
+			border:1px solid #e8e8e8;
+		}
+		.product-col.list .image{
+			padding:20px 30px 10px 0;
+			float:left;
+		}
+		.product-col .caption{
+			padding: 20px 0;
+		}
+			.product-col h4{
+				font-size:16px;
+				text-transform:uppercase;
+			}
+			.product-col h4, .product-col h4 a{
+				color:#252a2f;
+			}
+			.product-col .description{
+				padding:5px 0;
+				color:#8b8b8b;
+				font-size:12px;
+				line-height:18px;
+				text-align:justify;
+			}
+			.product-col.list .description{
+				padding-right:20px;
+			}
+			.product-col .price{
+				padding:10px 0;
+			}
+				.product-col .price .price-tax{
+					font-size:14px;
+					color:#2f353b;
+					text-transform:uppercase;
+				}
+				.product-col .price span.price-new{
+					color:#2f353b;
+					font-size:24px;
+					padding-right:5px;
+				}
+				.product-col .price span.price-old{
+					font-size:18px;
+					color:#808080;
+					text-decoration:line-through;
+				}
+			.product-col .cart-button{
+				padding-top:10px;
+			}
+				.product-col .cart-button .btn{
+					-webkit-border-radius:0;
+					   -moz-border-radius:0;
+				            border-radius:0;
+				}
+				.product-col .btn-wishlist,
+				.product-col .btn-compare{
+					color:#fff;
+					background:#2f353b;
+					margin-right:3px;
+				}
+				.product-col .btn-cart{
+					font-size:14px;
+					color:#2f353b;
+					background:#ffb400;
+					text-transform:uppercase;
+				}
+				.product-col .btn-cart:hover{
+					color:#fff;
+					background:#2f353b;
+				}
+
+
+	
+
+/* Contact Details Box Styles Starts */
+
+	.contact-details li + li{
+		margin-top:20px;
+	}
+	.contact-details li .fa{
+		color:#ffbf42;
+		padding:5px 10px 0 0;
+		font-size:18px;
+	}
+
+
+/* Footer Links Styles Starts */
+
+	.footer-links{
+		background:#e8e8e8;
+		border-top:1px solid #bcbcbc;
+		padding:25px 0 40px;
+	}
+		.footer-links h5{
+			text-transform:uppercase;
+			margin-bottom:20px;
+		}
+		.footer-links ul{
+			list-style:none;
+			margin:0;
+			padding:0;
+		}
+			.footer-links li{
+				font-size:12px;
+				padding:2px 0;
+			}
+				.footer-links li, .footer-links li a, .footer-links .last h4.lead{
+					color:#8b8b8b;
+				}
+				.footer-links li a:hover, .footer-links .last li a{
+					color:#333;
+				}
+				.footer-links .last h4.lead{
+					font-size:24px;
+					margin-bottom:0;
+				}
+				.footer-links .last h4.lead span{
+					color:#151515;
+				}
+
+	.copyright{
+		background:#252a2f;
+		padding:18px 0 8px;
+		font-size:13px;
+		color: white;
+	}
+	.copyright a{
+		/*icono de inicio de sesion*/
+		color:white;
+	}
+	/*--------busqueda------*/
+	.margen{
+
+		margin-left: 10%;
+	}
+	.cuadro{
+
+		padding: 2%;
+		margin: 2%;
+
+		border: 1px solid #81F79F;
+		border-bottom-right-radius: 20px;
+		border-bottom-left-radius: 20px;
+	}
+	.imagen{
+		height: 50%;
+		width: 100%;
+	}
+	.imagen img{
+		height: 100%;
+		width:  100%;
+
+	}
+
+
+
+/*--------form------- */
+
+	form label{
+		font-size: 15px;
+	}
+
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+
+  @media (min-width: 768px) {
+
+
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .featurette-heading {
+      margin-top: 120px;
+    }
+  }
