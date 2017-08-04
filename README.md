@@ -1,2 +1,2 @@
 # tierradelsur
-proyecto personal
+proyectos principales asp.net y diseño puro
