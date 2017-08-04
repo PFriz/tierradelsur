@@ -25,7 +25,8 @@ namespace ProyectoPapurri.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Producto> ProductoSet { get; set; }
-        public virtual DbSet<Tipo> TipoSet { get; set; }
+        public virtual DbSet<Producto> Producto { get; set; }
+        public virtual DbSet<Tipo> Tipo { get; set; }
+        public virtual DbSet<Subproducto> Subproductoes { get; set; }
     }
 }

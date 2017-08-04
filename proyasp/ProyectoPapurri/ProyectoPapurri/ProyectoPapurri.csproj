@@ -82,25 +82,25 @@
     </Content>
     <Content Include="Busqueda.aspx" />
     <Content Include="Contacto.aspx" />
-    <Content Include="Models\ModeloHerbal.Context.tt">
+    <Content Include="Models\ModeloHerb.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModeloHerbal.edmx</DependentUpon>
-      <LastGenOutput>ModeloHerbal.Context.cs</LastGenOutput>
+      <DependentUpon>ModeloHerb.edmx</DependentUpon>
+      <LastGenOutput>ModeloHerb.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\ModeloHerbal.edmx.sql" />
-    <Content Include="Models\ModeloHerbal.tt">
+    <Content Include="Models\ModeloHerb.edmx.sql" />
+    <Content Include="Models\ModeloHerb.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModeloHerbal.edmx</DependentUpon>
-      <LastGenOutput>ModeloHerbal.cs</LastGenOutput>
+      <DependentUpon>ModeloHerb.edmx</DependentUpon>
+      <LastGenOutput>ModeloHerb.cs</LastGenOutput>
     </Content>
     <Content Include="packages.config" />
     <Content Include="Models\Pagina.Master" />
-    <EntityDeploy Include="Models\ModeloHerbal.edmx">
+    <EntityDeploy Include="Models\ModeloHerb.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ModeloHerbal.Designer.cs</LastGenOutput>
+      <LastGenOutput>ModeloHerb.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\ModeloHerbal.edmx.diagram">
-      <DependentUpon>ModeloHerbal.edmx</DependentUpon>
+    <Content Include="Models\ModeloHerb.edmx.diagram">
+      <DependentUpon>ModeloHerb.edmx</DependentUpon>
     </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -155,20 +155,20 @@
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Models\ModeloHerbal.Context.cs">
+    <Compile Include="Models\ModeloHerb.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ModeloHerbal.Context.tt</DependentUpon>
+      <DependentUpon>ModeloHerb.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\ModeloHerbal.cs">
+    <Compile Include="Models\ModeloHerb.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ModeloHerbal.tt</DependentUpon>
+      <DependentUpon>ModeloHerb.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\ModeloHerbal.Designer.cs">
+    <Compile Include="Models\ModeloHerb.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ModeloHerbal.edmx</DependentUpon>
+      <DependentUpon>ModeloHerb.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\Pagina.Master.cs">
       <DependentUpon>Pagina.Master</DependentUpon>
@@ -178,10 +178,13 @@
       <DependentUpon>Pagina.Master</DependentUpon>
     </Compile>
     <Compile Include="Models\Producto.cs">
-      <DependentUpon>ModeloHerbal.tt</DependentUpon>
+      <DependentUpon>ModeloHerb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Subproducto.cs">
+      <DependentUpon>ModeloHerb.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Tipo.cs">
-      <DependentUpon>ModeloHerbal.tt</DependentUpon>
+      <DependentUpon>ModeloHerb.tt</DependentUpon>
     </Compile>
     <Compile Include="Producto.aspx.cs">
       <DependentUpon>Producto.aspx</DependentUpon>

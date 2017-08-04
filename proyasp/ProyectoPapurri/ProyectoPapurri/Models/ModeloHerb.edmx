@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="herbal_dbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Producto">
+          <Key>
+            <PropertyRef Name="id_producto" />
+          </Key>
+          <Property Name="id_producto" Type="int" Nullable="false" />
+          <Property Name="nombre" Type="nchar" MaxLength="40" />
+          <Property Name="n_cientifico" Type="nchar" MaxLength="40" />
+          <Property Name="beneficios" Type="nchar" MaxLength="40" />
+          <Property Name="fk_id_tipo" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Subproducto">
+          <Key>
+            <PropertyRef Name="id_sprod" />
+          </Key>
+          <Property Name="id_sprod" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="id_producto" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Tipo">
+          <Key>
+            <PropertyRef Name="id_tipo" />
+          </Key>
+          <Property Name="id_tipo" Type="int" Nullable="false" />
+          <Property Name="nombre" Type="nchar" MaxLength="40" />
+        </EntityType>
+        <Association Name="FK__Producto__fk_id___34C8D9D1">
+          <End Role="Tipo" Type="Self.Tipo" Multiplicity="1" />
+          <End Role="Producto" Type="Self.Producto" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tipo">
+              <PropertyRef Name="id_tipo" />
+            </Principal>
+            <Dependent Role="Producto">
+              <PropertyRef Name="fk_id_tipo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Subproduc__id_pr__5CD6CB2B">
+          <End Role="Producto" Type="Self.Producto" Multiplicity="1" />
+          <End Role="Subproducto" Type="Self.Subproducto" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Producto">
+              <PropertyRef Name="id_producto" />
+            </Principal>
+            <Dependent Role="Subproducto">
+              <PropertyRef Name="id_producto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="herbal_dbModelStoreContainer">
+          <EntitySet Name="Producto" EntityType="Self.Producto" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Subproducto" EntityType="Self.Subproducto" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Tipo" EntityType="Self.Tipo" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Producto__fk_id___34C8D9D1" Association="Self.FK__Producto__fk_id___34C8D9D1">
+            <End Role="Tipo" EntitySet="Tipo" />
+            <End Role="Producto" EntitySet="Producto" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Subproduc__id_pr__5CD6CB2B" Association="Self.FK__Subproduc__id_pr__5CD6CB2B">
+            <End Role="Producto" EntitySet="Producto" />
+            <End Role="Subproducto" EntitySet="Subproducto" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="herbal_dbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Producto">
+          <Key>
+            <PropertyRef Name="id_producto" />
+          </Key>
+          <Property Name="id_producto" Type="Int32" Nullable="false" />
+          <Property Name="nombre" Type="String" MaxLength="40" FixedLength="true" Unicode="true" />
+          <Property Name="n_cientifico" Type="String" MaxLength="40" FixedLength="true" Unicode="true" />
+          <Property Name="beneficios" Type="String" MaxLength="40" FixedLength="true" Unicode="true" />
+          <Property Name="fk_id_tipo" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Tipo" Relationship="Self.FK__Producto__fk_id___34C8D9D1" FromRole="Producto" ToRole="Tipo" />
+          <NavigationProperty Name="Subproductoes" Relationship="herbal_dbModel.FK__Subproduc__id_pr__5CD6CB2B" FromRole="Producto" ToRole="Subproducto" />
+        </EntityType>
+        <EntityType Name="Tipo">
+          <Key>
+            <PropertyRef Name="id_tipo" />
+          </Key>
+          <Property Name="id_tipo" Type="Int32" Nullable="false" />
+          <Property Name="nombre" Type="String" MaxLength="40" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="Producto" Relationship="Self.FK__Producto__fk_id___34C8D9D1" FromRole="Tipo" ToRole="Producto" />
+        </EntityType>
+        <Association Name="FK__Producto__fk_id___34C8D9D1">
+          <End Role="Tipo" Type="Self.Tipo" Multiplicity="1" />
+          <End Role="Producto" Type="Self.Producto" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tipo">
+              <PropertyRef Name="id_tipo" />
+            </Principal>
+            <Dependent Role="Producto">
+              <PropertyRef Name="fk_id_tipo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="herbal_dbEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Producto" EntityType="Self.Producto" />
+          <EntitySet Name="Tipo" EntityType="Self.Tipo" />
+          <AssociationSet Name="FK__Producto__fk_id___34C8D9D1" Association="Self.FK__Producto__fk_id___34C8D9D1">
+            <End Role="Tipo" EntitySet="Tipo" />
+            <End Role="Producto" EntitySet="Producto" />
+          </AssociationSet>
+          <EntitySet Name="Subproductoes" EntityType="herbal_dbModel.Subproducto" />
+          <AssociationSet Name="FK__Subproduc__id_pr__5CD6CB2B" Association="herbal_dbModel.FK__Subproduc__id_pr__5CD6CB2B">
+            <End Role="Producto" EntitySet="Producto" />
+            <End Role="Subproducto" EntitySet="Subproductoes" />
+          </AssociationSet>
+          </EntityContainer>
+        <EntityType Name="Subproducto">
+          <Key>
+            <PropertyRef Name="id_sprod" />
+          </Key>
+          <Property Name="id_sprod" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_producto" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Producto" Relationship="herbal_dbModel.FK__Subproduc__id_pr__5CD6CB2B" FromRole="Subproducto" ToRole="Producto" />
+        </EntityType>
+        <Association Name="FK__Subproduc__id_pr__5CD6CB2B">
+          <End Type="herbal_dbModel.Producto" Role="Producto" Multiplicity="1" />
+          <End Type="herbal_dbModel.Subproducto" Role="Subproducto" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Producto">
+              <PropertyRef Name="id_producto" />
+            </Principal>
+            <Dependent Role="Subproducto">
+              <PropertyRef Name="id_producto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="herbal_dbModelStoreContainer" CdmEntityContainer="herbal_dbEntities">
+    <EntitySetMapping Name="Producto">
+      <EntityTypeMapping TypeName="IsTypeOf(herbal_dbModel.Producto)">
+        <MappingFragment StoreEntitySet="Producto">
+          <ScalarProperty Name="id_producto" ColumnName="id_producto" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="n_cientifico" ColumnName="n_cientifico" />
+          <ScalarProperty Name="beneficios" ColumnName="beneficios" />
+          <ScalarProperty Name="fk_id_tipo" ColumnName="fk_id_tipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tipo">
+      <EntityTypeMapping TypeName="IsTypeOf(herbal_dbModel.Tipo)">
+        <MappingFragment StoreEntitySet="Tipo">
+          <ScalarProperty Name="id_tipo" ColumnName="id_tipo" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+          <EntitySetMapping Name="Subproductoes">
+            <EntityTypeMapping TypeName="herbal_dbModel.Subproducto">
+              <MappingFragment StoreEntitySet="Subproducto">
+                <ScalarProperty Name="id_producto" ColumnName="id_producto" />
+                <ScalarProperty Name="id_sprod" ColumnName="id_sprod" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

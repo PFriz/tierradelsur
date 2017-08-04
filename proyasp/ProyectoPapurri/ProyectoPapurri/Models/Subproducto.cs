@@ -12,18 +12,11 @@ namespace ProyectoPapurri.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Tipo
+    public partial class Subproducto
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Tipo()
-        {
-            this.Producto = new HashSet<Producto>();
-        }
+        public int id_sprod { get; set; }
+        public int id_producto { get; set; }
     
-        public int id_tipo { get; set; }
-        public string nombre { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Producto> Producto { get; set; }
+        public virtual Producto Producto { get; set; }
     }
 }
