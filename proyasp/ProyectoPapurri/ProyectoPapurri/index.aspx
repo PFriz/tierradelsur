@@ -108,22 +108,22 @@
 
 
         <div class="col-md-3 col-sm-6">
-    <div class="product-col">
-        <div class="image">
-        <img src="assets/img/product/pimg1.jpg" alt="product" class="img-responsive" />
+            <div class="product-col">
+                <div class="image">
+                    <img src="assets/img/product/pimg1.jpg" alt="product" class="img-responsive" />
+                </div>
+                <div class="caption">
+                    <h4><a href="#">Simply Organic Seeds</a></h4>
+                <div class="description">
+                    We are so lucky living in such a wonderful time. Our almost unlimited ...
+                </div>
+                    <div class="price">
+                        <span class="price-new">$199.50</span>
+                        <span class="price-old">$249.50</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="caption">
-        <h4><a href="#">Simply Organic Seeds</a></h4>
-        <div class="description">
-            We are so lucky living in such a wonderful time. Our almost unlimited ...
-        </div>
-        <div class="price">
-            <span class="price-new">$199.50</span>
-            <span class="price-old">$249.50</span>
-        </div>
-        </div>
-    </div>
-    </div>
 
                 </div><!-- /.row -->
             </div><!-- /.container -->
