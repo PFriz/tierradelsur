@@ -28,5 +28,7 @@ namespace ProyectoPapurri.Models
         public virtual DbSet<Producto> Producto { get; set; }
         public virtual DbSet<Tipo> Tipo { get; set; }
         public virtual DbSet<Subproducto> Subproductoes { get; set; }
+        public virtual DbSet<Cliente> Clientes { get; set; }
+        public virtual DbSet<Estado_Producto> Estado_Producto { get; set; }
     }
 }

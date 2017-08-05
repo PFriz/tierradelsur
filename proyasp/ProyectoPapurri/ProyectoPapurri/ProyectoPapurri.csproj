@@ -155,6 +155,12 @@
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Models\Cliente.cs">
+      <DependentUpon>ModeloHerb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Estado_Producto.cs">
+      <DependentUpon>ModeloHerb.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\ModeloHerb.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
