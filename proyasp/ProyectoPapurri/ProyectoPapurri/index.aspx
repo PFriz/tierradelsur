@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Models/Pagina.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="ProyectoPapurri.index" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/plantillas/Pagina.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="ProyectoPapurri.index" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ContentPlaceHolderID="Contenido" runat="server">

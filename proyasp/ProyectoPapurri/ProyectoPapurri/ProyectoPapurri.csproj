@@ -94,7 +94,7 @@
       <LastGenOutput>ModeloHerb.cs</LastGenOutput>
     </Content>
     <Content Include="packages.config" />
-    <Content Include="Models\Pagina.Master" />
+    <Content Include="plantillas\Pagina.Master" />
     <EntityDeploy Include="Models\ModeloHerb.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ModeloHerb.Designer.cs</LastGenOutput>
@@ -176,11 +176,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ModeloHerb.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\Pagina.Master.cs">
+    <Compile Include="plantillas\Pagina.Master.cs">
       <DependentUpon>Pagina.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Models\Pagina.Master.designer.cs">
+    <Compile Include="plantillas\Pagina.Master.designer.cs">
       <DependentUpon>Pagina.Master</DependentUpon>
     </Compile>
     <Compile Include="Models\Producto.cs">
@@ -204,6 +204,7 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
