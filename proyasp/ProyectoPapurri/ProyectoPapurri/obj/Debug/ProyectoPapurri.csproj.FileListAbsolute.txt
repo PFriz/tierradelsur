@@ -38,3 +38,7 @@ C:\Users\Perrin\Documents\GitHub\tierradelsur\proyasp\ProyectoPapurri\ProyectoPa
 C:\Users\Perrin\Documents\GitHub\tierradelsur\proyasp\ProyectoPapurri\ProyectoPapurri\obj\Debug\ProyectoPapurri.csprojResolveAssemblyReference.cache
 C:\Users\Perrin\Documents\GitHub\tierradelsur\proyasp\ProyectoPapurri\ProyectoPapurri\obj\Debug\ProyectoPapurri.dll
 C:\Users\Perrin\Documents\GitHub\tierradelsur\proyasp\ProyectoPapurri\ProyectoPapurri\obj\Debug\ProyectoPapurri.pdb
+C:\Users\Perrin\Documents\GitHub\tierradelsur\proyasp\ProyectoPapurri\ProyectoPapurri\bin\EntityFramework.dll
+C:\Users\Perrin\Documents\GitHub\tierradelsur\proyasp\ProyectoPapurri\ProyectoPapurri\bin\EntityFramework.SqlServer.dll
+C:\Users\Perrin\Documents\GitHub\tierradelsur\proyasp\ProyectoPapurri\ProyectoPapurri\bin\EntityFramework.xml
+C:\Users\Perrin\Documents\GitHub\tierradelsur\proyasp\ProyectoPapurri\ProyectoPapurri\bin\EntityFramework.SqlServer.xml
