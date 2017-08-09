@@ -80,6 +80,18 @@
     <Content Include="App_Data\herbal_db_log.ldf">
       <DependentUpon>herbal_db.mdf</DependentUpon>
     </Content>
+    <Content Include="assets\bower_components\animate.min.css" />
+    <Content Include="assets\bower_components\fullcalendar.min.css" />
+    <Content Include="assets\bower_components\jquery.mCustomScrollbar.min.css" />
+    <Content Include="assets\bower_components\js\curvedLines.js" />
+    <Content Include="assets\bower_components\js\jquery.easypiechart.min.js" />
+    <Content Include="assets\bower_components\js\jquery.flot.js" />
+    <Content Include="assets\bower_components\js\jquery.flot.resize.js" />
+    <Content Include="assets\bower_components\js\jquery.sparkline.min.js" />
+    <Content Include="assets\bower_components\sweetalert.css" />
+    <Content Include="assets\css\app_1.min.css" />
+    <Content Include="assets\css\app_2.min.css" />
+    <Content Include="assets\js\bootstrap.min.js" />
     <Content Include="Busqueda.aspx" />
     <Content Include="Contacto.aspx" />
     <Content Include="Models\ModeloHerb.Context.tt">
@@ -94,6 +106,7 @@
       <LastGenOutput>ModeloHerb.cs</LastGenOutput>
     </Content>
     <Content Include="packages.config" />
+    <Content Include="assets\bower_components\material-design-iconic-font.min.css" />
     <Content Include="plantillas\Pagina.Master" />
     <EntityDeploy Include="Models\ModeloHerb.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -102,6 +115,7 @@
     <Content Include="Models\ModeloHerb.edmx.diagram">
       <DependentUpon>ModeloHerb.edmx</DependentUpon>
     </Content>
+    <Content Include="plantillas\Admin.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -127,6 +141,7 @@
     <Content Include="assets\js\jquery.min.js" />
     <Content Include="Global.asax" />
     <Content Include="index.aspx" />
+    <Content Include="Private\index.aspx" />
     <Content Include="Producto.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -176,6 +191,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ModeloHerb.edmx</DependentUpon>
     </Compile>
+    <Compile Include="plantillas\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="plantillas\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
     <Compile Include="plantillas\Pagina.Master.cs">
       <DependentUpon>Pagina.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -191,6 +213,13 @@
     </Compile>
     <Compile Include="Models\Tipo.cs">
       <DependentUpon>ModeloHerb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Private\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Private\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Producto.aspx.cs">
       <DependentUpon>Producto.aspx</DependentUpon>
