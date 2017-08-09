@@ -83,11 +83,20 @@
     <Content Include="assets\bower_components\animate.min.css" />
     <Content Include="assets\bower_components\fullcalendar.min.css" />
     <Content Include="assets\bower_components\jquery.mCustomScrollbar.min.css" />
+    <Content Include="assets\bower_components\js\app.min.js" />
+    <Content Include="assets\bower_components\js\bootstrap-growl.min.js" />
     <Content Include="assets\bower_components\js\curvedLines.js" />
+    <Content Include="assets\bower_components\js\fullcalendar.min.js" />
     <Content Include="assets\bower_components\js\jquery.easypiechart.min.js" />
     <Content Include="assets\bower_components\js\jquery.flot.js" />
     <Content Include="assets\bower_components\js\jquery.flot.resize.js" />
+    <Content Include="assets\bower_components\js\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="assets\bower_components\js\jquery.simpleWeather.min.js" />
     <Content Include="assets\bower_components\js\jquery.sparkline.min.js" />
+    <Content Include="assets\bower_components\js\moment.min.js" />
+    <Content Include="assets\bower_components\js\sweetalert.min.js" />
+    <Content Include="assets\bower_components\js\waves.min.js" />
+    <Content Include="assets\bower_components\material-design-iconic-font.min.css" />
     <Content Include="assets\bower_components\sweetalert.css" />
     <Content Include="assets\css\app_1.min.css" />
     <Content Include="assets\css\app_2.min.css" />
@@ -106,7 +115,6 @@
       <LastGenOutput>ModeloHerb.cs</LastGenOutput>
     </Content>
     <Content Include="packages.config" />
-    <Content Include="assets\bower_components\material-design-iconic-font.min.css" />
     <Content Include="plantillas\Pagina.Master" />
     <EntityDeploy Include="Models\ModeloHerb.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -116,6 +124,9 @@
       <DependentUpon>ModeloHerb.edmx</DependentUpon>
     </Content>
     <Content Include="plantillas\Admin.Master" />
+    <Content Include="assets\fonts\Material-Design-Iconic-Fontd1f1.ttf" />
+    <Content Include="assets\fonts\Material-Design-Iconic-Fontd1f1.woff" />
+    <Content Include="assets\fonts\Material-Design-Iconic-Fontd1f1.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

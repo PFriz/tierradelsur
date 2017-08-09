@@ -47,219 +47,6 @@
                             <a href="#"><i class="him-icon zmdi zmdi-search"></i></a>
                         </li>
 
-                        <li class="dropdown">
-                            <a data-toggle="dropdown" href="#">
-                                <i class="him-icon zmdi zmdi-email"></i>
-                                <i class="him-counts">6</i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-lg pull-right">
-                                <div class="list-group list-group-light">
-                                    <div class="lg-header">
-                                        Messages
-                                    </div>
-                                    <div class="lg-body">
-                                        <a class="list-group-item media" href="#">
-                                            <div class="pull-left">
-                                                <img class="lgi-img" src="img/profile-pics/1.jpg" alt="">
-                                            </div>
-                                            <div class="media-body">
-                                                <div class="lgi-heading">David Belle</div>
-                                                <small class="lgi-text">Cum sociis natoque penatibus et magnis dis parturient montes</small>
-                                            </div>
-                                        </a>
-                                        <a class="list-group-item media" href="#">
-                                            <div class="pull-left">
-                                                <img class="lgi-img" src="img/profile-pics/2.jpg" alt="">
-                                            </div>
-                                            <div class="media-body">
-                                                <div class="lgi-heading">Jonathan Morris</div>
-                                                <small class="lgi-text">Nunc quis diam diamurabitur at dolor elementum, dictum turpis vel</small>
-                                            </div>
-                                        </a>
-                                        <a class="list-group-item media" href="#">
-                                            <div class="pull-left">
-                                                <img class="lgi-img" src="img/profile-pics/3.jpg" alt="">
-                                            </div>
-                                            <div class="media-body">
-                                                <div class="lgi-heading">Fredric Mitchell Jr.</div>
-                                                <small class="lgi-text">Phasellus a ante et est ornare accumsan at vel magnauis blandit turpis at augue ultricies</small>
-                                            </div>
-                                        </a>
-                                        <a class="list-group-item media" href="#">
-                                            <div class="pull-left">
-                                                <img class="lgi-img" src="img/profile-pics/4.jpg" alt="">
-                                            </div>
-                                            <div class="media-body">
-                                                <div class="lgi-heading">Glenn Jecobs</div>
-                                                <small class="lgi-text">Ut vitae lacus sem ellentesque maximus, nunc sit amet varius dignissim, dui est consectetur neque</small>
-                                            </div>
-                                        </a>
-                                        <a class="list-group-item media" href="#">
-                                            <div class="pull-left">
-                                                <img class="lgi-img" src="img/profile-pics/4.jpg" alt="">
-                                            </div>
-                                            <div class="media-body">
-                                                <div class="lgi-heading">Bill Phillips</div>
-                                                <small class="lgi-text">Proin laoreet commodo eros id faucibus. Donec ligula quam, imperdiet vel ante placerat</small>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <a class="view-more view-more-light" href="#">View All</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="dropdown">
-                            <a data-toggle="dropdown" href="#">
-                                <i class="him-icon zmdi zmdi-notifications"></i>
-                                <i class="him-counts">9</i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-lg pull-right">
-                                <div class="list-group list-group-light him-notification">
-                                    <div class="lg-header">
-                                        Notification
-
-                                        <ul class="actions">
-                                            <li class="dropdown">
-                                                <a href="#" data-ma-action="clear-notification">
-                                                    <i class="zmdi zmdi-check-all"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="lg-body">
-                                        <a class="list-group-item media" href="#">
-                                            <div class="pull-left">
-                                                <img class="lgi-img" src="img/profile-pics/1.jpg" alt="">
-                                            </div>
-                                            <div class="media-body">
-                                                <div class="lgi-heading">David Belle</div>
-                                                <small class="lgi-text">Cum sociis natoque penatibus et magnis dis parturient montes</small>
-                                            </div>
-                                        </a>
-                                        <a class="list-group-item media" href="#">
-                                            <div class="pull-left">
-                                                <img class="lgi-img" src="img/profile-pics/2.jpg" alt="">
-                                            </div>
-                                            <div class="media-body">
-                                                <div class="lgi-heading">Jonathan Morris</div>
-                                                <small class="lgi-text">Nunc quis diam diamurabitur at dolor elementum, dictum turpis vel</small>
-                                            </div>
-                                        </a>
-                                        <a class="list-group-item media" href="#">
-                                            <div class="pull-left">
-                                                <img class="lgi-img" src="img/profile-pics/3.jpg" alt="">
-                                            </div>
-                                            <div class="media-body">
-                                                <div class="lgi-heading">Fredric Mitchell Jr.</div>
-                                                <small class="lgi-text">Phasellus a ante et est ornare accumsan at vel magnauis blandit turpis at augue ultricies</small>
-                                            </div>
-                                        </a>
-                                        <a class="list-group-item media" href="#">
-                                            <div class="pull-left">
-                                                <img class="lgi-img" src="img/profile-pics/4.jpg" alt="">
-                                            </div>
-                                            <div class="media-body">
-                                                <div class="lgi-heading">Glenn Jecobs</div>
-                                                <small class="lgi-text">Ut vitae lacus sem ellentesque maximus, nunc sit amet varius dignissim, dui est consectetur neque</small>
-                                            </div>
-                                        </a>
-                                        <a class="list-group-item media" href="#">
-                                            <div class="pull-left">
-                                                <img class="lgi-img" src="img/profile-pics/4.jpg" alt="">
-                                            </div>
-                                            <div class="media-body">
-                                                <div class="lgi-heading">Bill Phillips</div>
-                                                <small class="lgi-text">Proin laoreet commodo eros id faucibus. Donec ligula quam, imperdiet vel ante placerat</small>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <a class="view-more view-more-light" href="#">View Previous</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="dropdown hidden-xs">
-                            <a data-toggle="dropdown" href="#">
-                                <i class="him-icon zmdi zmdi-view-list-alt"></i>
-                                <i class="him-counts">2</i>
-                            </a>
-                            <div class="dropdown-menu pull-right dropdown-menu-lg">
-                                <div class="list-group list-group-light">
-                                    <div class="lg-header">
-                                        Tasks
-                                    </div>
-                                    <div class="lg-body">
-                                        <div class="list-group-item">
-                                            <div class="lgi-heading m-b-5">HTML5 Validation Report</div>
-
-                                            <div class="progress">
-                                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
-                                                    <span class="sr-only">95% Complete (success)</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="list-group-item">
-                                            <div class="lgi-heading m-b-5">Google Chrome Extension</div>
-
-                                            <div class="progress">
-                                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                                    <span class="sr-only">80% Complete (success)</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="list-group-item">
-                                            <div class="lgi-heading m-b-5">Social Intranet Projects</div>
-
-                                            <div class="progress">
-                                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-                                                    <span class="sr-only">20% Complete</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="list-group-item">
-                                            <div class="lgi-heading m-b-5">Bootstrap Admin Template</div>
-
-                                            <div class="progress">
-                                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                                    <span class="sr-only">60% Complete (warning)</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="list-group-item">
-                                            <div class="lgi-heading m-b-5">Youtube Client App</div>
-
-                                            <div class="progress">
-                                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                                    <span class="sr-only">80% Complete (danger)</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <a class="view-more view-more-light" href="#">View All</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="dropdown">
-                            <a data-toggle="dropdown" href="#"><i class="him-icon zmdi zmdi-more-vert"></i></a>
-                            <ul class="dropdown-menu dm-icon pull-right">
-                                <li class="hidden-xs">
-                                    <a data-ma-action="fullscreen" href="#"><i class="zmdi zmdi-fullscreen"></i> Toggle Fullscreen</a>
-                                </li>
-                                <li>
-                                    <a data-ma-action="clear-localstorage" href="#"><i class="zmdi zmdi-delete"></i> Clear Local Storage</a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="zmdi zmdi-face"></i> Privacy Settings</a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="zmdi zmdi-settings"></i> Other Settings</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="hidden-xs ma-trigger" data-ma-action="sidebar-open" data-ma-target="#chat">
-                            <a href="#"><i class="him-icon zmdi zmdi-comment-alt-text"></i></a>
-                        </li>
                     </ul>
                 </li>
             </ul>
@@ -272,6 +59,60 @@
                 </div>
             </div>
         </header>
+        <!--xxxx-->
+        
+        <section id="main">
+            <aside id="sidebar" class="sidebar c-overflow">
+                <ul class="main-menu">
+                    
+                    <li> <a href="#"><i class="zmdi zmdi-home"></i> Inicio</a> </li>
+
+                    <li class="sub-menu">
+                        <!--nombre menu-->
+                        <a href="#" data-ma-action="submenu-toggle"><i class="zmdi zmdi-view-compact"></i> Carrusel</a>
+                        <!--sub menues-->
+                        <ul>
+                            <li><a href="textual-menu.html">Textual menu</a></li>
+                            <li><a href="image-logo.html">Image logo</a></li>
+                            <li><a href="top-mainmenu.html">Mainmenu on top</a></li>
+                        </ul>
+                    </li>
+                    
+
+                </ul>
+            </aside>
+
+
+            <section id="content">
+                <div class="container">
+                    <div class="block-header">
+                        <h2>Dashboard</h2>
+
+                    </div>
+                    <div class="card">
+
+                        <div class="card-header">
+                            <h2>
+                                Titulo
+                            </h2>
+                        </div>
+                        <div class="card-body card-padding">
+                            <p class="lead">subtitulo</p>
+                            <p>El resto xD</p>
+                            <p>Maecenas commodo felis sed lorem tristique pretium. Phasellus eget quam aliquet, dapibus neque sed, blandit ante. Nullam posuere enim ac justo aliquam, et iaculis odio dictum. Maecenas ante velit, vehicula nec sapien sed, eleifend tempor neque. Morbi vel dolor aliquet, bibendum magna mattis, mattis lectus. Mauris nec felis orci. Sed molestie accumsan mauris vel sollicitudin. Curabitur ante risus, semper porttitor nibh in, sodales aliquam orci. Donec et ipsum nec enim vulputate tempus. Morbi non auctor justo. Nam nec suscipit enim. Maecenas quis augue consectetur ipsum fringilla pulvinar sit amet ut justo.</p>
+
+                        </div>
+
+                    </div>
+                    
+
+                </div>
+
+                
+            </section>
+        </section>
+        
+
         <!--xxxx-->
         <footer id="footer">
             Copyright &copy; 2015 Material Admin
@@ -292,13 +133,15 @@
                     <circle class="plc-path" cx="50" cy="50" r="20" />
                 </svg>
 
-                <p>Espere Porfavor...</p>
+                <p>Espere por favor...</p>
             </div>
         </div>
 
 
     </div>
     </form>
+
+    
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
 
@@ -308,6 +151,18 @@
     <script src="../assets/bower_components/js/jquery.sparkline.min.js"></script>
     <script src="../assets/bower_components/js/jquery.easypiechart.min.js"></script>
 
+    <script src="../assets/bower_components/js/moment.min.js"></script>
+    <script src="../assets/bower_components/js/fullcalendar.min.js"></script>
+    <script src="../assets/bower_components/js/jquery.simpleWeather.min.js"></script>
+    <script src="../assets/bower_components/js/waves.min.js"></script>
+    <script src="../assets/bower_components/js/bootstrap-growl.min.js"></script>
+    <script src="../assets/bower_components/js/sweetalert.min.js"></script>
+    <script src="../assets/bower_components/js/jquery.mCustomScrollbar.concat.min.js"></script>
 
+    <script src="../assets/bower_components/js/app.min.js"></script>
+
+    <script type="text/javascript">
+        notify("probando probando, la vulva jugosa", "default");
+    </script>
 </body>
 </html>
