@@ -86,6 +86,7 @@
     <Content Include="assets\bower_components\js\app.min.js" />
     <Content Include="assets\bower_components\js\bootstrap-growl.min.js" />
     <Content Include="assets\bower_components\js\curvedLines.js" />
+    <Content Include="assets\bower_components\js\fileinput.min.js" />
     <Content Include="assets\bower_components\js\fullcalendar.min.js" />
     <Content Include="assets\bower_components\js\jquery.easypiechart.min.js" />
     <Content Include="assets\bower_components\js\jquery.flot.js" />
@@ -152,6 +153,7 @@
     <Content Include="assets\js\jquery.min.js" />
     <Content Include="Global.asax" />
     <Content Include="index.aspx" />
+    <Content Include="Private\Carrusel-nuevafoto.aspx" />
     <Content Include="Private\index.aspx" />
     <Content Include="Producto.aspx" />
     <Content Include="Web.config" />
@@ -224,6 +226,13 @@
     </Compile>
     <Compile Include="Models\Tipo.cs">
       <DependentUpon>ModeloHerb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Private\Carrusel-nuevafoto.aspx.cs">
+      <DependentUpon>Carrusel-nuevafoto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Private\Carrusel-nuevafoto.aspx.designer.cs">
+      <DependentUpon>Carrusel-nuevafoto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Private\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>

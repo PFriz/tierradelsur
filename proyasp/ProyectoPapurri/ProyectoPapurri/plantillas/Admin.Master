@@ -24,8 +24,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        </asp:ContentPlaceHolder>
+        
         <header id="header" class="clearfix">
             <ul class="h-inner">
                 <li class="hi-trigger ma-trigger" data-ma-action="sidebar-open" data-ma-target="#sidebar">
@@ -77,39 +76,36 @@
                             <li><a href="top-mainmenu.html">Mainmenu on top</a></li>
                         </ul>
                     </li>
-                    
-
                 </ul>
             </aside>
 
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
 
-            <section id="content">
-                <div class="container">
-                    <div class="block-header">
-                        <h2>Dashboard</h2>
-
-                    </div>
-                    <div class="card">
-
-                        <div class="card-header">
-                            <h2>
-                                Titulo
-                            </h2>
-                        </div>
-                        <div class="card-body card-padding">
-                            <p class="lead">subtitulo</p>
-                            <p>El resto xD</p>
-                            <p>Maecenas commodo felis sed lorem tristique pretium. Phasellus eget quam aliquet, dapibus neque sed, blandit ante. Nullam posuere enim ac justo aliquam, et iaculis odio dictum. Maecenas ante velit, vehicula nec sapien sed, eleifend tempor neque. Morbi vel dolor aliquet, bibendum magna mattis, mattis lectus. Mauris nec felis orci. Sed molestie accumsan mauris vel sollicitudin. Curabitur ante risus, semper porttitor nibh in, sodales aliquam orci. Donec et ipsum nec enim vulputate tempus. Morbi non auctor justo. Nam nec suscipit enim. Maecenas quis augue consectetur ipsum fringilla pulvinar sit amet ut justo.</p>
+                <section id="content">
+                    <div class="container">
+                        <div class="block-header">
+                            <h2>Dashboard</h2>
 
                         </div>
+                        <div class="card">
 
+                            <div class="card-header">
+                                <h2>
+                                    Titulo
+                                </h2>
+                            </div>
+                            <div class="card-body card-padding">
+                                <p class="lead">subtitulo</p>
+                                <p>El resto xD</p>
+                                <p>Maecenas commodo felis sed lorem tristique pretium. Phasellus eget quam aliquet, dapibus neque sed, blandit ante. Nullam posuere enim ac justo aliquam, et iaculis odio dictum. Maecenas ante velit, vehicula nec sapien sed, eleifend tempor neque. Morbi vel dolor aliquet, bibendum magna mattis, mattis lectus. Mauris nec felis orci. Sed molestie accumsan mauris vel sollicitudin. Curabitur ante risus, semper porttitor nibh in, sodales aliquam orci. Donec et ipsum nec enim vulputate tempus. Morbi non auctor justo. Nam nec suscipit enim. Maecenas quis augue consectetur ipsum fringilla pulvinar sit amet ut justo.</p>
+
+                            </div>
+                        </div>
                     </div>
-                    
+                </section>
 
-                </div>
+            </asp:ContentPlaceHolder>
 
-                
-            </section>
         </section>
         
 
@@ -127,6 +123,7 @@
         </footer>
 
         <!-- Page Loader -->
+        <!--
         <div class="page-loader">
             <div class="preloader pls-white">
                 <svg class="pl-circular" viewBox="25 25 50 50">
@@ -136,7 +133,7 @@
                 <p>Espere por favor...</p>
             </div>
         </div>
-
+        -->
 
     </div>
     </form>
@@ -160,6 +157,8 @@
     <script src="../assets/bower_components/js/jquery.mCustomScrollbar.concat.min.js"></script>
 
     <script src="../assets/bower_components/js/app.min.js"></script>
+
+    <script src="../assets/bower_components/js/fileinput.min.js"></script>
 
     <script type="text/javascript">
         notify("probando probando, la vulva jugosa", "default");
