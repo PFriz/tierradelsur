@@ -157,6 +157,11 @@
         <script src="../assets/admin/vendors/bower_components/sweetalert/dist/sweetalert.min.js"></script>
         <script src="../assets/admin/vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
 
+        <script src="../assets/admin/js/app.min.js"></script>
+
+
+
+
     <script type="text/javascript">
         notify("probando probando, la vulva jugosa", "default");
     </script>
