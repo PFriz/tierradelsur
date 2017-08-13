@@ -36,7 +36,7 @@
                 </li>
 
                 <li class="hi-logo hidden-xs">
-                    <a href="index-2.html">Admin Campos Del Sur</a>
+                    <a href="#">Admin Campos Del Sur</a>
                 </li>
 
                 <li class="pull-right">
@@ -68,12 +68,11 @@
 
                     <li class="sub-menu">
                         <!--nombre menu-->
-                        <a href="#" data-ma-action="submenu-toggle"><i class="zmdi zmdi-view-compact"></i> Carrusel</a>
+                        <a href="#" data-ma-action="submenu-toggle"><i class="zmdi zmdi-local-florist"></i>Productos</a>
                         <!--sub menues-->
                         <ul>
-                            <li><a href="textual-menu.html">Textual menu</a></li>
-                            <li><a href="image-logo.html">Image logo</a></li>
-                            <li><a href="top-mainmenu.html">Mainmenu on top</a></li>
+                            <li><a href="#"><i class="zmdi zmdi-view-toc"></i> Listar Productos</a></li>
+              
                         </ul>
                     </li>
                 </ul>

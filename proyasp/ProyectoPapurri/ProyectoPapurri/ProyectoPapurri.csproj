@@ -372,6 +372,7 @@
     <Content Include="index.aspx" />
     <Content Include="Private\Carrusel-nuevafoto.aspx" />
     <Content Include="Private\index.aspx" />
+    <Content Include="Private\listarProductos.aspx" />
     <Content Include="Producto.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -457,6 +458,13 @@
     </Compile>
     <Compile Include="Private\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Private\listarProductos.aspx.cs">
+      <DependentUpon>listarProductos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Private\listarProductos.aspx.designer.cs">
+      <DependentUpon>listarProductos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Producto.aspx.cs">
       <DependentUpon>Producto.aspx</DependentUpon>
