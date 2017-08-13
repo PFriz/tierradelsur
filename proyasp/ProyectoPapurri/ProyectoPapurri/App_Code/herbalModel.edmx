@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="herbal_dbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="herbalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Cliente">
           <Key>
             <PropertyRef Name="id_cliente" />
@@ -95,7 +95,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="herbal_dbModelStoreContainer">
+        <EntityContainer Name="herbalModelStoreContainer">
           <EntitySet Name="Cliente" EntityType="Self.Cliente" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Estado_Producto" EntityType="Self.Estado_Producto" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Producto" EntityType="Self.Producto" Schema="dbo" store:Type="Tables" />
@@ -118,10 +118,27 @@
             <End Role="Subproducto" EntitySet="Subproducto" />
           </AssociationSet>
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="herbal_dbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="herbalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Cliente">
+          <Key>
+            <PropertyRef Name="id_cliente" />
+          </Key>
+          <Property Name="id_cliente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Subproducto" Relationship="Self.FK__Subproduc__id_cl__71D1E811" FromRole="Cliente" ToRole="Subproducto" />
+        </EntityType>
+        <EntityType Name="Estado_Producto">
+          <Key>
+            <PropertyRef Name="id_estado" />
+          </Key>
+          <Property Name="id_estado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Subproducto" Relationship="Self.FK__Subproduc__id_es__74AE54BC" FromRole="Estado_Producto" ToRole="Subproducto" />
+        </EntityType>
         <EntityType Name="Producto">
           <Key>
             <PropertyRef Name="id_producto" />
@@ -130,10 +147,23 @@
           <Property Name="nombre" Type="String" MaxLength="40" FixedLength="true" Unicode="true" />
           <Property Name="n_cientifico" Type="String" MaxLength="40" FixedLength="true" Unicode="true" />
           <Property Name="beneficios" Type="String" MaxLength="40" FixedLength="true" Unicode="true" />
-          <Property Name="fk_id_tipo" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Tipo" Relationship="Self.FK__Producto__fk_id___34C8D9D1" FromRole="Producto" ToRole="Tipo" />
-          <NavigationProperty Name="Subproductoes" Relationship="herbal_dbModel.FK__Subproduc__id_pr__5CD6CB2B" FromRole="Producto" ToRole="Subproducto" />
           <Property Name="imagen" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="fk_id_tipo" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Tipo" Relationship="Self.FK__Producto__fk_id___02FC7413" FromRole="Producto" ToRole="Tipo" />
+          <NavigationProperty Name="Subproducto" Relationship="Self.FK__Subproduc__id_pr__03F0984C" FromRole="Producto" ToRole="Subproducto" />
+        </EntityType>
+        <EntityType Name="Subproducto">
+          <Key>
+            <PropertyRef Name="id_sprod" />
+          </Key>
+          <Property Name="id_sprod" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_producto" Type="Int32" Nullable="false" />
+          <Property Name="id_cliente" Type="Int32" Nullable="false" />
+          <Property Name="formato" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+          <Property Name="id_estado" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Cliente" Relationship="Self.FK__Subproduc__id_cl__71D1E811" FromRole="Subproducto" ToRole="Cliente" />
+          <NavigationProperty Name="Estado_Producto" Relationship="Self.FK__Subproduc__id_es__74AE54BC" FromRole="Subproducto" ToRole="Estado_Producto" />
+          <NavigationProperty Name="Producto" Relationship="Self.FK__Subproduc__id_pr__03F0984C" FromRole="Subproducto" ToRole="Producto" />
         </EntityType>
         <EntityType Name="Tipo">
           <Key>
@@ -141,9 +171,33 @@
           </Key>
           <Property Name="id_tipo" Type="Int32" Nullable="false" />
           <Property Name="nombre" Type="String" MaxLength="40" FixedLength="true" Unicode="true" />
-          <NavigationProperty Name="Producto" Relationship="Self.FK__Producto__fk_id___34C8D9D1" FromRole="Tipo" ToRole="Producto" />
+          <NavigationProperty Name="Producto" Relationship="Self.FK__Producto__fk_id___02FC7413" FromRole="Tipo" ToRole="Producto" />
         </EntityType>
-        <Association Name="FK__Producto__fk_id___34C8D9D1">
+        <Association Name="FK__Subproduc__id_cl__71D1E811">
+          <End Role="Cliente" Type="Self.Cliente" Multiplicity="1" />
+          <End Role="Subproducto" Type="Self.Subproducto" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cliente">
+              <PropertyRef Name="id_cliente" />
+            </Principal>
+            <Dependent Role="Subproducto">
+              <PropertyRef Name="id_cliente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Subproduc__id_es__74AE54BC">
+          <End Role="Estado_Producto" Type="Self.Estado_Producto" Multiplicity="1" />
+          <End Role="Subproducto" Type="Self.Subproducto" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Estado_Producto">
+              <PropertyRef Name="id_estado" />
+            </Principal>
+            <Dependent Role="Subproducto">
+              <PropertyRef Name="id_estado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Producto__fk_id___02FC7413">
           <End Role="Tipo" Type="Self.Tipo" Multiplicity="1" />
           <End Role="Producto" Type="Self.Producto" Multiplicity="*" />
           <ReferentialConstraint>
@@ -155,45 +209,9 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="herbal_dbEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="Producto" EntityType="Self.Producto" />
-          <EntitySet Name="Tipo" EntityType="Self.Tipo" />
-          <AssociationSet Name="FK__Producto__fk_id___34C8D9D1" Association="Self.FK__Producto__fk_id___34C8D9D1">
-            <End Role="Tipo" EntitySet="Tipo" />
-            <End Role="Producto" EntitySet="Producto" />
-          </AssociationSet>
-          <EntitySet Name="Subproductoes" EntityType="herbal_dbModel.Subproducto" />
-          <AssociationSet Name="FK__Subproduc__id_pr__5CD6CB2B" Association="herbal_dbModel.FK__Subproduc__id_pr__5CD6CB2B">
-            <End Role="Producto" EntitySet="Producto" />
-            <End Role="Subproducto" EntitySet="Subproductoes" />
-          </AssociationSet>
-          <EntitySet Name="Clientes" EntityType="herbal_dbModel.Cliente" />
-          <EntitySet Name="Estado_Producto" EntityType="herbal_dbModel.Estado_Producto" />
-          <AssociationSet Name="FK__Subproduc__id_cl__71D1E811" Association="herbal_dbModel.FK__Subproduc__id_cl__71D1E811">
-            <End Role="Cliente" EntitySet="Clientes" />
-            <End Role="Subproducto" EntitySet="Subproductoes" />
-          </AssociationSet>
-          <AssociationSet Name="FK__Subproduc__id_es__74AE54BC" Association="herbal_dbModel.FK__Subproduc__id_es__74AE54BC">
-            <End Role="Estado_Producto" EntitySet="Estado_Producto" />
-            <End Role="Subproducto" EntitySet="Subproductoes" />
-          </AssociationSet>
-          </EntityContainer>
-        <EntityType Name="Subproducto">
-          <Key>
-            <PropertyRef Name="id_sprod" />
-          </Key>
-          <Property Name="id_sprod" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="id_producto" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Producto" Relationship="herbal_dbModel.FK__Subproduc__id_pr__5CD6CB2B" FromRole="Subproducto" ToRole="Producto" />
-          <Property Name="id_cliente" Type="Int32" Nullable="false" />
-          <Property Name="formato" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
-          <Property Name="id_estado" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Cliente" Relationship="herbal_dbModel.FK__Subproduc__id_cl__71D1E811" FromRole="Subproducto" ToRole="Cliente" />
-          <NavigationProperty Name="Estado_Producto" Relationship="herbal_dbModel.FK__Subproduc__id_es__74AE54BC" FromRole="Subproducto" ToRole="Estado_Producto" />
-        </EntityType>
-        <Association Name="FK__Subproduc__id_pr__5CD6CB2B">
-          <End Type="herbal_dbModel.Producto" Role="Producto" Multiplicity="1" />
-          <End Type="herbal_dbModel.Subproducto" Role="Subproducto" Multiplicity="*" />
+        <Association Name="FK__Subproduc__id_pr__03F0984C">
+          <End Role="Producto" Type="Self.Producto" Multiplicity="1" />
+          <End Role="Subproducto" Type="Self.Subproducto" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Producto">
               <PropertyRef Name="id_producto" />
@@ -203,101 +221,85 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityType Name="Cliente">
-          <Key>
-            <PropertyRef Name="id_cliente" />
-          </Key>
-          <Property Name="id_cliente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="Subproductoes" Relationship="herbal_dbModel.FK__Subproduc__id_cl__71D1E811" FromRole="Cliente" ToRole="Subproducto" />
-        </EntityType>
-        <EntityType Name="Estado_Producto">
-          <Key>
-            <PropertyRef Name="id_estado" />
-          </Key>
-          <Property Name="id_estado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="nombre" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="Subproductoes" Relationship="herbal_dbModel.FK__Subproduc__id_es__74AE54BC" FromRole="Estado_Producto" ToRole="Subproducto" />
-        </EntityType>
-        <Association Name="FK__Subproduc__id_cl__71D1E811">
-          <End Type="herbal_dbModel.Cliente" Role="Cliente" Multiplicity="1" />
-          <End Type="herbal_dbModel.Subproducto" Role="Subproducto" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Cliente">
-              <PropertyRef Name="id_cliente" />
-            </Principal>
-            <Dependent Role="Subproducto">
-              <PropertyRef Name="id_cliente" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK__Subproduc__id_es__74AE54BC">
-          <End Type="herbal_dbModel.Estado_Producto" Role="Estado_Producto" Multiplicity="1" />
-          <End Type="herbal_dbModel.Subproducto" Role="Subproducto" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Estado_Producto">
-              <PropertyRef Name="id_estado" />
-            </Principal>
-            <Dependent Role="Subproducto">
-              <PropertyRef Name="id_estado" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
+        <EntityContainer Name="herbalEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Cliente" EntityType="Self.Cliente" />
+          <EntitySet Name="Estado_Producto" EntityType="Self.Estado_Producto" />
+          <EntitySet Name="Producto" EntityType="Self.Producto" />
+          <EntitySet Name="Subproducto" EntityType="Self.Subproducto" />
+          <EntitySet Name="Tipo" EntityType="Self.Tipo" />
+          <AssociationSet Name="FK__Subproduc__id_cl__71D1E811" Association="Self.FK__Subproduc__id_cl__71D1E811">
+            <End Role="Cliente" EntitySet="Cliente" />
+            <End Role="Subproducto" EntitySet="Subproducto" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Subproduc__id_es__74AE54BC" Association="Self.FK__Subproduc__id_es__74AE54BC">
+            <End Role="Estado_Producto" EntitySet="Estado_Producto" />
+            <End Role="Subproducto" EntitySet="Subproducto" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Producto__fk_id___02FC7413" Association="Self.FK__Producto__fk_id___02FC7413">
+            <End Role="Tipo" EntitySet="Tipo" />
+            <End Role="Producto" EntitySet="Producto" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Subproduc__id_pr__03F0984C" Association="Self.FK__Subproduc__id_pr__03F0984C">
+            <End Role="Producto" EntitySet="Producto" />
+            <End Role="Subproducto" EntitySet="Subproducto" />
+          </AssociationSet>
+        </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
-    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="herbal_dbModelStoreContainer" CdmEntityContainer="herbal_dbEntities">
-    <EntitySetMapping Name="Producto">
-      <EntityTypeMapping TypeName="IsTypeOf(herbal_dbModel.Producto)">
-        <MappingFragment StoreEntitySet="Producto">
-          <ScalarProperty Name="imagen" ColumnName="imagen" />
-                <ScalarProperty Name="id_producto" ColumnName="id_producto" />
-          <ScalarProperty Name="nombre" ColumnName="nombre" />
-          <ScalarProperty Name="n_cientifico" ColumnName="n_cientifico" />
-          <ScalarProperty Name="beneficios" ColumnName="beneficios" />
-          <ScalarProperty Name="fk_id_tipo" ColumnName="fk_id_tipo" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Tipo">
-      <EntityTypeMapping TypeName="IsTypeOf(herbal_dbModel.Tipo)">
-        <MappingFragment StoreEntitySet="Tipo">
-          <ScalarProperty Name="id_tipo" ColumnName="id_tipo" />
-          <ScalarProperty Name="nombre" ColumnName="nombre" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-          <EntitySetMapping Name="Subproductoes">
-            <EntityTypeMapping TypeName="herbal_dbModel.Subproducto">
-              <MappingFragment StoreEntitySet="Subproducto">
-                <ScalarProperty Name="id_estado" ColumnName="id_estado" />
-                <ScalarProperty Name="formato" ColumnName="formato" />
-                <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
-                <ScalarProperty Name="id_producto" ColumnName="id_producto" />
-                <ScalarProperty Name="id_sprod" ColumnName="id_sprod" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Clientes">
-            <EntityTypeMapping TypeName="herbal_dbModel.Cliente">
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="herbalModelStoreContainer" CdmEntityContainer="herbalEntities">
+          <EntitySetMapping Name="Cliente">
+            <EntityTypeMapping TypeName="herbalModel.Cliente">
               <MappingFragment StoreEntitySet="Cliente">
-                <ScalarProperty Name="nombre" ColumnName="nombre" />
                 <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Estado_Producto">
-            <EntityTypeMapping TypeName="herbal_dbModel.Estado_Producto">
+            <EntityTypeMapping TypeName="herbalModel.Estado_Producto">
               <MappingFragment StoreEntitySet="Estado_Producto">
+                <ScalarProperty Name="id_estado" ColumnName="id_estado" />
                 <ScalarProperty Name="nombre" ColumnName="nombre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Producto">
+            <EntityTypeMapping TypeName="herbalModel.Producto">
+              <MappingFragment StoreEntitySet="Producto">
+                <ScalarProperty Name="id_producto" ColumnName="id_producto" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="n_cientifico" ColumnName="n_cientifico" />
+                <ScalarProperty Name="beneficios" ColumnName="beneficios" />
+                <ScalarProperty Name="imagen" ColumnName="imagen" />
+                <ScalarProperty Name="fk_id_tipo" ColumnName="fk_id_tipo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Subproducto">
+            <EntityTypeMapping TypeName="herbalModel.Subproducto">
+              <MappingFragment StoreEntitySet="Subproducto">
+                <ScalarProperty Name="id_sprod" ColumnName="id_sprod" />
+                <ScalarProperty Name="id_producto" ColumnName="id_producto" />
+                <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
+                <ScalarProperty Name="formato" ColumnName="formato" />
                 <ScalarProperty Name="id_estado" ColumnName="id_estado" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-  </EntityContainerMapping>
-</Mapping></edmx:Mappings>
+          <EntitySetMapping Name="Tipo">
+            <EntityTypeMapping TypeName="herbalModel.Tipo">
+              <MappingFragment StoreEntitySet="Tipo">
+                <ScalarProperty Name="id_tipo" ColumnName="id_tipo" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
   </edmx:Runtime>
   <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
   <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
@@ -309,9 +311,9 @@
     <Options>
       <DesignerInfoPropertySet>
         <DesignerProperty Name="ValidateOnBuild" Value="true" />
-        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
         <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
-        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
         <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
       </DesignerInfoPropertySet>
     </Options>

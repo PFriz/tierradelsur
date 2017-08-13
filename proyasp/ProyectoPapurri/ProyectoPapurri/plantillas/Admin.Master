@@ -71,8 +71,7 @@
                         <a href="#" data-ma-action="submenu-toggle"><i class="zmdi zmdi-local-florist"></i>Productos</a>
                         <!--sub menues-->
                         <ul>
-                            <li><a href="#"><i class="zmdi zmdi-view-toc"></i> Listar Productos</a></li>
-              
+                            <li><a href="../Private/listarProductos.aspx"><i class="zmdi zmdi-view-toc"></i> Listar Productos</a></li>
                         </ul>
                     </li>
                 </ul>

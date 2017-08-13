@@ -7,27 +7,28 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ProyectoPapurri.Models
+namespace ProyectoPapurri.App_Code
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class herbal_dbEntities : DbContext
+    public partial class herbalEntities : DbContext
     {
-        public herbal_dbEntities()
-            : base("name=herbal_dbEntities")
+        public herbalEntities()
+            : base("name=herbalEntities")
         {
         }
+    
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Producto> Producto { get; set; }
-        public virtual DbSet<Tipo> Tipo { get; set; }
-        public virtual DbSet<Subproducto> Subproductoes { get; set; }
-        public virtual DbSet<Cliente> Clientes { get; set; }
+        public virtual DbSet<Cliente> Cliente { get; set; }
         public virtual DbSet<Estado_Producto> Estado_Producto { get; set; }
+        public virtual DbSet<Producto> Producto { get; set; }
+        public virtual DbSet<Subproducto> Subproducto { get; set; }
+        public virtual DbSet<Tipo> Tipo { get; set; }
     }
 }
