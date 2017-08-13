@@ -8,11 +8,11 @@
     <title>Material Admin</title>
 
     <!-- Vendor CSS -->
-    <link href="../assets/admin/bower_components/fullcalendar.min.css" rel="stylesheet"/>
-    <link href="../assets/admin/bower_components/animate.min.css" rel="stylesheet"/>
-    <link href="../assets/admin/bower_components/sweetalert.css" rel="stylesheet"/>
-    <link href="../assets/admin/bower_components/material-design-iconic-font.min.css" rel="stylesheet"/>
-    <link href="../assets/admin/bower_components/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+        <link href="../assets/admin/vendors/bower_components/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet"/>
+        <link href="../assets/admin/vendors/bower_components/animate.css/animate.min.css" rel="stylesheet"/>
+        <link href="../assets/admin/vendors/bower_components/sweetalert/dist/sweetalert.css" rel="stylesheet" />
+        <link href="../assets/admin/vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet"/>
+        <link href="../assets/admin/vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet">
 
     <!-- CSS -->
     <link href="../assets/admin/css/app_1.min.css" rel="stylesheet"/>
@@ -139,26 +139,23 @@
     </form>
 
     
-    <script src="../assets/admin/js/jquery.min.js"></script>
-    <script src="../assets/admin/js/bootstrap.min.js"></script>
 
-    <script src="../assets/bower_components/js/jquery.flot.js"></script>
-    <script src="../assets/bower_components/js/jquery.flot.resize.js"></script>
-    <script src="../assets/bower_components/js/curvedLines.js"></script>
-    <script src="../assets/bower_components/js/jquery.sparkline.min.js"></script>
-    <script src="../assets/bower_components/js/jquery.easypiechart.min.js"></script>
+        <script src="../assets/admin/vendors/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="../assets/admin/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <script src="../assets/bower_components/js/moment.min.js"></script>
-    <script src="../assets/bower_components/js/fullcalendar.min.js"></script>
-    <script src="../assets/bower_components/js/jquery.simpleWeather.min.js"></script>
-    <script src="../assets/bower_components/js/waves.min.js"></script>
-    <script src="../assets/bower_components/js/bootstrap-growl.min.js"></script>
-    <script src="../assets/bower_components/js/sweetalert.min.js"></script>
-    <script src="../assets/bower_components/js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="../assets/admin/vendors/bower_components/flot/jquery.flot.js"></script>
+        <script src="../assets/admin/vendors/bower_components/flot/jquery.flot.resize.js"></script>
+        <script src="../assets/admin/vendors/bower_components/flot.curvedlines/curvedLines.js"></script>
+        <script src="../assets/admin/vendors/sparklines/jquery.sparkline.min.js"></script>
+        <script src="../assets/admin/vendors/bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
 
-    <script src="../assets/bower_components/js/app.min.js"></script>
-
-    <script src="../assets/bower_components/js/fileinput.min.js"></script>
+        <script src="../assets/admin/vendors/bower_components/moment/min/moment.min.js"></script>
+        <script src="../assets/admin/vendors/bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+        <script src="../assets/admin/vendors/bower_components/simpleWeather/jquery.simpleWeather.min.js"></script>
+        <script src="../assets/admin/vendors/bower_components/Waves/dist/waves.min.js"></script>
+        <script src="../assets/admin/vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
+        <script src="../assets/admin/vendors/bower_components/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="../assets/admin/vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
 
     <script type="text/javascript">
         notify("probando probando, la vulva jugosa", "default");
