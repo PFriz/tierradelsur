@@ -8,15 +8,15 @@
     <title>Material Admin</title>
 
     <!-- Vendor CSS -->
-    <link href="../assets/bower_components/fullcalendar.min.css" rel="stylesheet"/>
-    <link href="../assets/bower_components/animate.min.css" rel="stylesheet"/>
-    <link href="../assets/bower_components/sweetalert.css" rel="stylesheet"/>
-    <link href="../assets/bower_components/material-design-iconic-font.min.css" rel="stylesheet"/>
-    <link href="../assets/bower_components/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+    <link href="../assets/admin/bower_components/fullcalendar.min.css" rel="stylesheet"/>
+    <link href="../assets/admin/bower_components/animate.min.css" rel="stylesheet"/>
+    <link href="../assets/admin/bower_components/sweetalert.css" rel="stylesheet"/>
+    <link href="../assets/admin/bower_components/material-design-iconic-font.min.css" rel="stylesheet"/>
+    <link href="../assets/admin/bower_components/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
 
     <!-- CSS -->
-    <link href="../assets/css/app_1.min.css" rel="stylesheet"/>
-    <link href="../assets/css/app_2.min.css" rel="stylesheet"/>
+    <link href="../assets/admin/css/app_1.min.css" rel="stylesheet"/>
+    <link href="../assets/admin/css/app_2.min.css" rel="stylesheet"/>
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -139,8 +139,8 @@
     </form>
 
     
-    <script src="../assets/js/jquery.min.js"></script>
-    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/admin/js/jquery.min.js"></script>
+    <script src="../assets/admin/js/bootstrap.min.js"></script>
 
     <script src="../assets/bower_components/js/jquery.flot.js"></script>
     <script src="../assets/bower_components/js/jquery.flot.resize.js"></script>
