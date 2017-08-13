@@ -19,7 +19,6 @@ namespace ProyectoPapurri.Models
             : base("name=herbal_dbEntities")
         {
         }
-    
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();

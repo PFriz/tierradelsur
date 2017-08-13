@@ -11,6 +11,7 @@
     <Property Name="fk_id_tipo" Type="Int32" Nullable="false" />
     <NavigationProperty Name="Tipo" Relationship="Self.FK__Producto__fk_id___34C8D9D1" FromRole="Producto" ToRole="Tipo" />
     <NavigationProperty Name="Subproductoes" Relationship="herbal_dbModel.FK__Subproduc__id_pr__5CD6CB2B" FromRole="Producto" ToRole="Subproducto" />
+    <Property Name="imagen" Type="Binary" MaxLength="Max" FixedLength="false" />
   </EntityType>
   <EntityType Name="Tipo">
     <Key>

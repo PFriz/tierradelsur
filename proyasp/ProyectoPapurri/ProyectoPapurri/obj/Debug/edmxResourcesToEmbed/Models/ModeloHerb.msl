@@ -4,6 +4,7 @@
     <EntitySetMapping Name="Producto">
       <EntityTypeMapping TypeName="IsTypeOf(herbal_dbModel.Producto)">
         <MappingFragment StoreEntitySet="Producto">
+          <ScalarProperty Name="imagen" ColumnName="imagen" />
           <ScalarProperty Name="id_producto" ColumnName="id_producto" />
           <ScalarProperty Name="nombre" ColumnName="nombre" />
           <ScalarProperty Name="n_cientifico" ColumnName="n_cientifico" />

@@ -42,3 +42,27 @@ C:\Users\Perrin\Documents\GitHub\tierradelsur\proyasp\ProyectoPapurri\ProyectoPa
 C:\Users\Perrin\Documents\GitHub\tierradelsur\proyasp\ProyectoPapurri\ProyectoPapurri\bin\EntityFramework.SqlServer.dll
 C:\Users\Perrin\Documents\GitHub\tierradelsur\proyasp\ProyectoPapurri\ProyectoPapurri\bin\EntityFramework.xml
 C:\Users\Perrin\Documents\GitHub\tierradelsur\proyasp\ProyectoPapurri\ProyectoPapurri\bin\EntityFramework.SqlServer.xml
+C:\Users\patricio lerzundi\Desktop\Github\proyasp\ProyectoPapurri\ProyectoPapurri\bin\roslyn\csc.exe
+C:\Users\patricio lerzundi\Desktop\Github\proyasp\ProyectoPapurri\ProyectoPapurri\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\patricio lerzundi\Desktop\Github\proyasp\ProyectoPapurri\ProyectoPapurri\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\patricio lerzundi\Desktop\Github\proyasp\ProyectoPapurri\ProyectoPapurri\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\patricio lerzundi\Desktop\Github\proyasp\ProyectoPapurri\ProyectoPapurri\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\patricio lerzundi\Desktop\Github\proyasp\ProyectoPapurri\ProyectoPapurri\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\patricio lerzundi\Desktop\Github\proyasp\ProyectoPapurri\ProyectoPapurri\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\patricio lerzundi\Desktop\Github\proyasp\ProyectoPapurri\ProyectoPapurri\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\patricio lerzundi\Desktop\Github\proyasp\ProyectoPapurri\ProyectoPapurri\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\patricio lerzundi\Desktop\Github\proyasp\ProyectoPapurri\ProyectoPapurri\bin\roslyn\vbc.exe
+C:\Users\patricio lerzundi\Desktop\Github\proyasp\ProyectoPapurri\ProyectoPapurri\bin\roslyn\VBCSCompiler.exe
+C:\Users\patricio lerzundi\Desktop\Github\proyasp\ProyectoPapurri\ProyectoPapurri\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\patricio lerzundi\Desktop\Github\proyasp\ProyectoPapurri\ProyectoPapurri\bin\ProyectoPapurri.dll.config
+C:\Users\patricio lerzundi\Desktop\Github\proyasp\ProyectoPapurri\ProyectoPapurri\bin\ProyectoPapurri.dll
+C:\Users\patricio lerzundi\Desktop\Github\proyasp\ProyectoPapurri\ProyectoPapurri\bin\ProyectoPapurri.pdb
+C:\Users\patricio lerzundi\Desktop\Github\proyasp\ProyectoPapurri\ProyectoPapurri\bin\EntityFramework.dll
+C:\Users\patricio lerzundi\Desktop\Github\proyasp\ProyectoPapurri\ProyectoPapurri\bin\EntityFramework.SqlServer.dll
+C:\Users\patricio lerzundi\Desktop\Github\proyasp\ProyectoPapurri\ProyectoPapurri\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\patricio lerzundi\Desktop\Github\proyasp\ProyectoPapurri\ProyectoPapurri\bin\EntityFramework.xml
+C:\Users\patricio lerzundi\Desktop\Github\proyasp\ProyectoPapurri\ProyectoPapurri\bin\EntityFramework.SqlServer.xml
+C:\Users\patricio lerzundi\Desktop\Github\proyasp\ProyectoPapurri\ProyectoPapurri\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\patricio lerzundi\Desktop\Github\proyasp\ProyectoPapurri\ProyectoPapurri\obj\Debug\ProyectoPapurri.csprojResolveAssemblyReference.cache
+C:\Users\patricio lerzundi\Desktop\Github\proyasp\ProyectoPapurri\ProyectoPapurri\obj\Debug\ProyectoPapurri.dll
+C:\Users\patricio lerzundi\Desktop\Github\proyasp\ProyectoPapurri\ProyectoPapurri\obj\Debug\ProyectoPapurri.pdb

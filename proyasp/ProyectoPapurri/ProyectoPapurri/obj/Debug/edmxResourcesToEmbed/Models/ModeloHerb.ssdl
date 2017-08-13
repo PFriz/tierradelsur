@@ -22,6 +22,7 @@
     <Property Name="nombre" Type="nchar" MaxLength="40" />
     <Property Name="n_cientifico" Type="nchar" MaxLength="40" />
     <Property Name="beneficios" Type="nchar" MaxLength="40" />
+    <Property Name="imagen" Type="image" />
     <Property Name="fk_id_tipo" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Subproducto">
@@ -41,7 +42,7 @@
     <Property Name="id_tipo" Type="int" Nullable="false" />
     <Property Name="nombre" Type="nchar" MaxLength="40" />
   </EntityType>
-  <Association Name="FK__Producto__fk_id___34C8D9D1">
+  <Association Name="FK__Producto__fk_id___02FC7413">
     <End Role="Tipo" Type="Self.Tipo" Multiplicity="1" />
     <End Role="Producto" Type="Self.Producto" Multiplicity="*" />
     <ReferentialConstraint>
@@ -77,7 +78,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Subproduc__id_pr__5CD6CB2B">
+  <Association Name="FK__Subproduc__id_pr__03F0984C">
     <End Role="Producto" Type="Self.Producto" Multiplicity="1" />
     <End Role="Subproducto" Type="Self.Subproducto" Multiplicity="*" />
     <ReferentialConstraint>
@@ -95,7 +96,7 @@
     <EntitySet Name="Producto" EntityType="Self.Producto" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Subproducto" EntityType="Self.Subproducto" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Tipo" EntityType="Self.Tipo" Schema="dbo" store:Type="Tables" />
-    <AssociationSet Name="FK__Producto__fk_id___34C8D9D1" Association="Self.FK__Producto__fk_id___34C8D9D1">
+    <AssociationSet Name="FK__Producto__fk_id___02FC7413" Association="Self.FK__Producto__fk_id___02FC7413">
       <End Role="Tipo" EntitySet="Tipo" />
       <End Role="Producto" EntitySet="Producto" />
     </AssociationSet>
@@ -107,7 +108,7 @@
       <End Role="Estado_Producto" EntitySet="Estado_Producto" />
       <End Role="Subproducto" EntitySet="Subproducto" />
     </AssociationSet>
-    <AssociationSet Name="FK__Subproduc__id_pr__5CD6CB2B" Association="Self.FK__Subproduc__id_pr__5CD6CB2B">
+    <AssociationSet Name="FK__Subproduc__id_pr__03F0984C" Association="Self.FK__Subproduc__id_pr__03F0984C">
       <End Role="Producto" EntitySet="Producto" />
       <End Role="Subproducto" EntitySet="Subproducto" />
     </AssociationSet>

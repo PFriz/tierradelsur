@@ -25,6 +25,7 @@ namespace ProyectoPapurri.Models
         public string n_cientifico { get; set; }
         public string beneficios { get; set; }
         public int fk_id_tipo { get; set; }
+        public byte[] imagen { get; set; }
     
         public virtual Tipo Tipo { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
