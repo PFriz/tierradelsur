@@ -15,7 +15,13 @@ namespace ProyectoPapurri.DAO
             return contexto.Productoes.AsNoTracking().ToList();
         }
        
+        //crea lista de todos los tipos
+        public List<Tipo> ListarTipo()
+        {
+            var contexto = new herbalEntities();
+            return contexto.Tipoes.AsNoTracking().ToList();
 
+        }
 
 
     }
