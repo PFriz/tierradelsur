@@ -369,11 +369,14 @@
     <Content Include="assets\js\jquery.min.js" />
     <Content Include="Global.asax" />
     <Content Include="index.aspx" />
+    <Content Include="Private\Carrusel-Listado.aspx" />
     <Content Include="Private\Carrusel-nuevafoto.aspx" />
     <Content Include="Private\index.aspx" />
     <Content Include="Private\listarProductos.aspx" />
     <Content Include="Producto.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Code\Cliente.cs">
@@ -445,6 +448,13 @@
     <Compile Include="plantillas\Pagina.Master.designer.cs">
       <DependentUpon>Pagina.Master</DependentUpon>
     </Compile>
+    <Compile Include="Private\Carrusel-Listado.aspx.cs">
+      <DependentUpon>Carrusel-Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Private\Carrusel-Listado.aspx.designer.cs">
+      <DependentUpon>Carrusel-Listado.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Private\Carrusel-nuevafoto.aspx.cs">
       <DependentUpon>Carrusel-nuevafoto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -480,7 +490,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="assets\img\Carrusel\" />
-    <Folder Include="Private\test\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -12,8 +12,8 @@ namespace ProyectoPapurri.Private
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            NImagen.Click += new EventHandler(this.NuevaImagen);
-            plus.Text = "";
+           
+            exito.Text = "";
         }
         private void NuevaImagen(object sender, EventArgs e)
         {
@@ -26,7 +26,7 @@ namespace ProyectoPapurri.Private
                 {
                     archivo1.PostedFile.SaveAs(SaveLocation);
                     //DB guardar en un tabla la ubicacion de las imagenees para cargarlas mas adelante
-                    plus.Text += "<div class='alert alert-success alert-dismissible' role='alert'><button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button>¡Excelente! Su imagen a sido subida exitosamente</div>";
+                    exito.Text += "<div class='alert alert-success alert-dismissible' role='alert'><button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button>¡Excelente! Su imagen a sido subida exitosamente</div>";
                 }
                 catch (Exception ex)
                 {
@@ -38,7 +38,7 @@ namespace ProyectoPapurri.Private
             }
             else
             {
-                plus.Text = "Al menos seleccione un archivo";
+                exito.Text = "Al menos seleccione un archivo";
             }
 
             if ((archivo2.PostedFile != null) && (archivo2.PostedFile.ContentLength > 0))
@@ -49,7 +49,7 @@ namespace ProyectoPapurri.Private
                 {
                     archivo2.PostedFile.SaveAs(SaveLocation);
                     //DB guardar en un tabla la ubicacion de las imagenees para cargarlas mas adelante
-                    plus.Text += "<div class='alert alert-success alert-dismissible' role='alert'><button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button>¡Excelente! Su imagen a sido subida exitosamente</div>";
+                    exito.Text += "<div class='alert alert-success alert-dismissible' role='alert'><button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button>¡Excelente! Su imagen a sido subida exitosamente</div>";
                 }
                 catch (Exception ex)
                 {
@@ -67,7 +67,7 @@ namespace ProyectoPapurri.Private
                 {
                     archivo3.PostedFile.SaveAs(SaveLocation);
                     //DB guardar en un tabla la ubicacion de las imagenees para cargarlas mas adelante
-                    plus.Text += "<div class='alert alert-success alert-dismissible' role='alert'><button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button>¡Excelente! Su imagen a sido subida exitosamente</div>";
+                    exito.Text += "<div class='alert alert-success alert-dismissible' role='alert'><button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button>¡Excelente! Su imagen a sido subida exitosamente</div>";
 
                 }
                 catch (Exception ex)
@@ -86,7 +86,7 @@ namespace ProyectoPapurri.Private
                 {
                     archivo4.PostedFile.SaveAs(SaveLocation);
                     //DB guardar en un tabla la ubicacion de las imagenees para cargarlas mas adelante
-                    plus.Text += "<div class='alert alert-success alert-dismissible' role='alert'><button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button>¡Excelente! Su imagen a sido subida exitosamente</div>";
+                    exito.Text += "<div class='alert alert-success alert-dismissible' role='alert'><button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button>¡Excelente! Su imagen a sido subida exitosamente</div>";
 
                 }
                 catch (Exception ex)

@@ -7,7 +7,7 @@
         <div class="container">
             <div class="block-header">
 
-                <asp:Literal ID="plus" runat="server"></asp:Literal>
+                <asp:Literal ID="exito" runat="server"></asp:Literal>
                 <h2>Carrusel</h2>
                 
             </div>
@@ -67,9 +67,7 @@
                     
 
                 </div>
-                <div class="card-body card-padding hidden">
-                    <input type="button" class="btn bgm-gray" onclick="agregarIma();" value="Añadir Otra Imagen" />
-                </div>
+                
                 <div class="card-body card-padding">
                     <asp:Button ID="NImagen" CssClass="btn bgm-bluegray" runat="server" Text="Subir Imagen"></asp:Button>
                 </div>

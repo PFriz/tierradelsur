@@ -13,13 +13,13 @@ namespace ProyectoPapurri.Private {
     public partial class Carrusel_nuevafoto {
         
         /// <summary>
-        /// Control plus.
+        /// Control exito.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal plus;
+        protected global::System.Web.UI.WebControls.Literal exito;
         
         /// <summary>
         /// Control archivo1.
