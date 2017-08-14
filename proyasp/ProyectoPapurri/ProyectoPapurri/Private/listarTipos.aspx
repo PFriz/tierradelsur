@@ -38,7 +38,8 @@
             </div>
             <div class="card">
                 <div class="table-responsive">
-                    <asp:gridview id="gdTipo" CssClass="table table-striped" runat="server" CellPadding="0"></asp:gridview>
+                    <asp:gridview id="gdTipo" CssClass="table table-striped" BorderStyle="None" runat="server" AllowCustomPaging="True" AllowPaging="True">
+                    </asp:gridview>
                 </div>
 
             </div>
