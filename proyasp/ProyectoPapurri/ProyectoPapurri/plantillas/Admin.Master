@@ -70,7 +70,7 @@
                     <li class="sub-menu">
                       <a href="#" data-ma-action="submenu-toggle"><i class="zmdi zmdi-border-color"></i> Tipos Productos</a>
                         <ul>
-                         <li><a href="#"><i class="zmdi zmdi-view-toc"></i> Listar Productos</a></li>
+                         <li><a href="../Private/listarTipos.aspx"><i class="zmdi zmdi-view-toc"></i> Listar Tipo</a></li>
                         </ul>
                     </li>
                     <li class="sub-menu">
