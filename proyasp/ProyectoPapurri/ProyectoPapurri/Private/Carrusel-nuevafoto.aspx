@@ -24,7 +24,7 @@
                             <span class="btn btn-default btn-file waves-effect">
                                 <span class="fileinput-new">Seleccionar Imagen</span>
                                 <span class="fileinput-exists">Editar</span>
-                                <input type="file" name="..."/>
+                                <input type="file" name="..." id="archivo" runat="server"/>
                             </span>
                             <a href="#" class="btn btn-danger fileinput-exists waves-effect" data-dismiss="fileinput">Remove</a>
                         </div>
@@ -34,12 +34,14 @@
 
                 </div>
                 <div class="card-body card-padding">
-                    <asp:Button ID="NImagen" CssClass="btn bgm-bluegray" runat="server" Text="Añadir otra imagen"></asp:Button>
                     <input type="button" class="btn bgm-gray" onclick="agregarIma();" value="Añadir Otra Imagen" />
+                </div>
+                <div class="card-body card-padding">
+                    <asp:Button ID="NImagen" CssClass="btn bgm-bluegray" runat="server" Text="Subir Imagen"></asp:Button>
                 </div>
             </div>
         </div>
-
+        
         <script type="text/javascript">
             function agregarIma() {
                 var elm = document.createElement('div');
@@ -54,6 +56,8 @@
             
 
         </script>
+
+        
     </section>
 
 

@@ -16,7 +16,29 @@ namespace ProyectoPapurri.Private
         }
         private void NuevaImagen(object sender, EventArgs e)
         {
-            plus.Text += "<div class='fileinput fileinput-new' data-provides='fileinput'><div class='fileinput-preview thumbnail' data-trigger='fileinput'></div><div><span class='btn btn-default btn-file waves-effect'><span class='fileinput-new'>Seleccionar Imagen</span><span class='fileinput-exists'>Editar</span><input type='file' name='...'/></span><a href='#' class='btn btn-danger fileinput-exists waves-effect' data-dismiss='fileinput'>Remove</a></div></div>";
+            //guardar imagenes
+            if ((archivo.PostedFile != null) && (archivo.PostedFile.ContentLength > 0))
+            {
+                string fn = System.IO.Path.GetFileName(archivo.PostedFile.FileName);
+                string SaveLocation = Server.MapPath("carrusel") + "\\" + fn;
+                try
+                {
+                    archivo.PostedFile.SaveAs(SaveLocation);
+                    Response.Write("The file has been uploaded.");
+                }
+                catch (Exception ex)
+                {
+                    Response.Write("Error: " + ex.Message);
+                    //Note: Exception.Message returns a detailed message that describes the current exception. 
+                    //For security reasons, we do not recommend that you return Exception.Message to end users in 
+                    //production environments. It would be better to put a generic error message. 
+                }
+            }
+            else
+            {
+                Response.Write("Please select a file to upload.");
+            }
+
         }
     }
 }

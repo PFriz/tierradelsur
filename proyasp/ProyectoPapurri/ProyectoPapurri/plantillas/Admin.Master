@@ -155,9 +155,12 @@
         <script src="../assets/admin/vendors/bower_components/sweetalert/dist/sweetalert.min.js"></script>
         <script src="../assets/admin/vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
 
+        <script src="../assets/admin/vendors/fileinput/fileinput.min.js"></script>
+        <script src="../assets/admin/vendors/input-mask/input-mask.min.js"></script>
+
         <script src="../assets/admin/js/app.min.js"></script>
 
-
+        
 
 
     <script type="text/javascript">
