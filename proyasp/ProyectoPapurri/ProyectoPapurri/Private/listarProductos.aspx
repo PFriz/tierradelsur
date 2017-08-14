@@ -39,11 +39,11 @@
 
             <div class="card">
                         <div class="card-header">
-                            <h2>lista actual de la tabla <small>Principales productos</small></h2>
+                            <h2>Listas de Productos</h2>
                         </div>
                         
                         <div class="table-responsive">
-                                <asp:GridView ID="grProducto" CssClass="table table-striped" runat="server"></asp:GridView>
+                             <asp:GridView ID="grProducto" CssClass="table table-striped" runat="server" CellPadding="0"></asp:GridView>
                         </div>
                     </div>
 
