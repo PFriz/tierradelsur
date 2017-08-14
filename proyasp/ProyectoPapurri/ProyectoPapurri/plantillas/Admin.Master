@@ -66,6 +66,13 @@
                     
                     <li> <a href="#"><i class="zmdi zmdi-home"></i> Inicio</a> </li>
 
+
+                    <li class="sub-menu">
+                      <a href="#" data-ma-action="submenu-toggle"><i class="zmdi zmdi-border-color"></i> Tipos Productos</a>
+                        <ul>
+                         <li><a href="#"><i class="zmdi zmdi-view-toc"></i> Listar Productos</a></li>
+                        </ul>
+                    </li>
                     <li class="sub-menu">
                         <!--nombre menu-->
                         <a href="#" data-ma-action="submenu-toggle"><i class="zmdi zmdi-local-florist"></i>Productos</a>
