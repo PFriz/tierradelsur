@@ -76,16 +76,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Code\herbalModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>herbalModel.edmx</DependentUpon>
-      <LastGenOutput>herbalModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="App_Code\herbalModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>herbalModel.edmx</DependentUpon>
-      <LastGenOutput>herbalModel.cs</LastGenOutput>
-    </Content>
     <Content Include="App_Data\herbal_db.mdf" />
     <Content Include="App_Data\herbal_db_log.ldf">
       <DependentUpon>herbal_db.mdf</DependentUpon>
@@ -296,6 +286,16 @@
     <Content Include="assets\js\bootstrap.min.js" />
     <Content Include="Busqueda.aspx" />
     <Content Include="Contacto.aspx" />
+    <Content Include="herbalModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>herbalModel.edmx</DependentUpon>
+      <LastGenOutput>herbalModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="herbalModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>herbalModel.edmx</DependentUpon>
+      <LastGenOutput>herbalModel.cs</LastGenOutput>
+    </Content>
     <Content Include="packages.config" />
     <Content Include="plantillas\Pagina.Master" />
     <Content Include="plantillas\Admin.Master" />
@@ -337,11 +337,11 @@
     <Content Include="assets\admin\vendors\bower_components\material-design-iconic-font\dist\fonts\Material-Design-Iconic-Fontd1f1.ttf" />
     <Content Include="assets\admin\vendors\bower_components\material-design-iconic-font\dist\fonts\Material-Design-Iconic-Fontd1f1.woff" />
     <Content Include="assets\admin\vendors\bower_components\material-design-iconic-font\dist\fonts\Material-Design-Iconic-Fontd1f1.woff2" />
-    <EntityDeploy Include="App_Code\herbalModel.edmx">
+    <EntityDeploy Include="herbalModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>herbalModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="App_Code\herbalModel.edmx.diagram">
+    <Content Include="herbalModel.edmx.diagram">
       <DependentUpon>herbalModel.edmx</DependentUpon>
     </Content>
     <None Include="Web.Debug.config">
@@ -376,42 +376,15 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Code\Cliente.cs">
-      <DependentUpon>herbalModel.tt</DependentUpon>
-    </Content>
-    <Content Include="App_Code\Estado_Producto.cs">
-      <DependentUpon>herbalModel.tt</DependentUpon>
-    </Content>
-    <Content Include="App_Code\herbalModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>herbalModel.Context.tt</DependentUpon>
-    </Content>
-    <Content Include="App_Code\herbalModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>herbalModel.tt</DependentUpon>
-    </Content>
-    <Content Include="App_Code\herbalModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>herbalModel.edmx</DependentUpon>
-    </Content>
-    <Content Include="App_Code\Producto.cs">
-      <DependentUpon>herbalModel.tt</DependentUpon>
-    </Content>
-    <Content Include="App_Code\Subproducto.cs">
-      <DependentUpon>herbalModel.tt</DependentUpon>
-    </Content>
-    <Content Include="App_Code\Tipo.cs">
-      <DependentUpon>herbalModel.tt</DependentUpon>
-    </Content>
     <Compile Include="Busqueda.aspx.cs">
       <DependentUpon>Busqueda.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Busqueda.aspx.designer.cs">
       <DependentUpon>Busqueda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.cs">
+      <DependentUpon>herbalModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Contacto.aspx.cs">
       <DependentUpon>Contacto.aspx</DependentUpon>
@@ -421,8 +394,26 @@
       <DependentUpon>Contacto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dao\Dato.cs" />
+    <Compile Include="Estado_Producto.cs">
+      <DependentUpon>herbalModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="herbalModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>herbalModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="herbalModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>herbalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="herbalModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>herbalModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
@@ -473,7 +464,16 @@
     <Compile Include="Producto.aspx.designer.cs">
       <DependentUpon>Producto.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Producto.cs">
+      <DependentUpon>herbalModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Subproducto.cs">
+      <DependentUpon>herbalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tipo.cs">
+      <DependentUpon>herbalModel.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

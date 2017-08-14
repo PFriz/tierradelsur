@@ -43,9 +43,7 @@
                         </div>
                         
                         <div class="table-responsive">
-                            <table class="table table-striped">
-                                <asp:GridView ID="grProducto" runat="server"></asp:GridView>
-                            </table>
+                                <asp:GridView ID="grProducto" CssClass="table table-striped" runat="server"></asp:GridView>
                         </div>
                     </div>
 

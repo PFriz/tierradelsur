@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ProyectoPapurri.App_Code
+namespace ProyectoPapurri
 {
     using System;
     using System.Collections.Generic;
@@ -17,7 +17,7 @@ namespace ProyectoPapurri.App_Code
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Producto()
         {
-            this.Subproducto = new HashSet<Subproducto>();
+            this.Subproductoes = new HashSet<Subproducto>();
         }
     
         public int id_producto { get; set; }
@@ -29,6 +29,6 @@ namespace ProyectoPapurri.App_Code
     
         public virtual Tipo Tipo { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Subproducto> Subproducto { get; set; }
+        public virtual ICollection<Subproducto> Subproductoes { get; set; }
     }
 }

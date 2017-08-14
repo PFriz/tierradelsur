@@ -7,23 +7,23 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ProyectoPapurri.App_Code
+namespace ProyectoPapurri
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Cliente
+    public partial class Estado_Producto
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Cliente()
+        public Estado_Producto()
         {
-            this.Subproducto = new HashSet<Subproducto>();
+            this.Subproductoes = new HashSet<Subproducto>();
         }
     
-        public int id_cliente { get; set; }
+        public int id_estado { get; set; }
         public string nombre { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Subproducto> Subproducto { get; set; }
+        public virtual ICollection<Subproducto> Subproductoes { get; set; }
     }
 }

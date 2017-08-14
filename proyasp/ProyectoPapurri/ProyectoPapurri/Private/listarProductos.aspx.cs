@@ -12,7 +12,10 @@ namespace ProyectoPapurri.Private
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+            //instacio para llamar las utilidades de dato y cargo la grilla
+            DAO.Dato llamar = new DAO.Dato();
+            grProducto.DataSource = llamar.ListarProducto();
+            grProducto.DataBind();
 
         }
     }

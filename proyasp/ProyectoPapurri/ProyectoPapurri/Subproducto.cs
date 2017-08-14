@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ProyectoPapurri.App_Code
+namespace ProyectoPapurri
 {
     using System;
     using System.Collections.Generic;

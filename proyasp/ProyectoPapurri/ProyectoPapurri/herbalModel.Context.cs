@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ProyectoPapurri.App_Code
+namespace ProyectoPapurri
 {
     using System;
     using System.Data.Entity;
@@ -25,10 +25,10 @@ namespace ProyectoPapurri.App_Code
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Cliente> Cliente { get; set; }
+        public virtual DbSet<Cliente> Clientes { get; set; }
         public virtual DbSet<Estado_Producto> Estado_Producto { get; set; }
-        public virtual DbSet<Producto> Producto { get; set; }
-        public virtual DbSet<Subproducto> Subproducto { get; set; }
-        public virtual DbSet<Tipo> Tipo { get; set; }
+        public virtual DbSet<Producto> Productoes { get; set; }
+        public virtual DbSet<Subproducto> Subproductoes { get; set; }
+        public virtual DbSet<Tipo> Tipoes { get; set; }
     }
 }
