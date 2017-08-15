@@ -373,6 +373,7 @@
     <Content Include="Private\Carrusel-nuevafoto.aspx" />
     <Content Include="Private\index.aspx" />
     <Content Include="Private\listarProductos.aspx" />
+    <Content Include="Private\Zonas-de-texto.aspx" />
     <Content Include="Producto.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -466,6 +467,13 @@
     </Compile>
     <Compile Include="Private\listarProductos.aspx.designer.cs">
       <DependentUpon>listarProductos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Private\Zonas-de-texto.aspx.cs">
+      <DependentUpon>Zonas-de-texto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Private\Zonas-de-texto.aspx.designer.cs">
+      <DependentUpon>Zonas-de-texto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Producto.aspx.cs">
       <DependentUpon>Producto.aspx</DependentUpon>
