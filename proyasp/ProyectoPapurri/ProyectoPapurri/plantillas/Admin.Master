@@ -24,7 +24,7 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
+    
     <div>
         
         <header id="header" class="clearfix">
@@ -130,7 +130,7 @@
         </footer>
 
         <!-- Page Loader -->
-        <!--
+        
         <div class="page-loader">
             <div class="preloader pls-white">
                 <svg class="pl-circular" viewBox="25 25 50 50">
@@ -140,10 +140,8 @@
                 <p>Espere por favor...</p>
             </div>
         </div>
-        -->
 
     </div>
-    </form>
 
     
 
@@ -165,11 +163,11 @@
         <script src="../assets/admin/vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
 
         <script src="../assets/admin/vendors/bower_components/bootstrap-select/dist/js/bootstrap-select.js"></script>
-        <script src="../assets/admin/vendors/summernote/dist/summernote-updated.min.js"></script>
 
         <script src="../assets/admin/vendors/fileinput/fileinput.min.js"></script>
         <script src="../assets/admin/vendors/input-mask/input-mask.min.js"></script>
-
+    
+        <script src="../assets/admin/vendors/summernote/dist/summernote-updated.min.js"></script>
         <script src="../assets/admin/js/app.min.js"></script>
 
     

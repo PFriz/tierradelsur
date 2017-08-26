@@ -11,6 +11,8 @@
                 <h2>Carrusel</h2>
                 
             </div>
+
+            <form runat="server">
             <div class="card">
                 
                 <div class="card-header">
@@ -76,6 +78,8 @@
 
                 </div>
             </div>
+
+            </form>
         </div>
         
 

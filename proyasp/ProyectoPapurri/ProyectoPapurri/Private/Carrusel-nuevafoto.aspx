@@ -11,6 +11,7 @@
                 <h2>Carrusel</h2>
                 
             </div>
+            <form runat="server">
             <div class="card">
                 
                 <div class="card-header">
@@ -72,6 +73,7 @@
                     <asp:Button ID="NImagen" CssClass="btn bgm-bluegray" runat="server" Text="Subir Imagen"></asp:Button>
                 </div>
             </div>
+            </form>
         </div>
         
         
